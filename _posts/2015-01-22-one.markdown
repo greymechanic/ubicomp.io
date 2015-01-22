@@ -9,14 +9,14 @@ categories: >
 ---
 > The first day of class is always like a first date.. it'll be a little awkward at first, you'll wonder what our future will be like together, you'll leave and forget alot of what we talked about, but if it clicks you'll be excited for the next class.
 
-for planners:
+*for planners, here's what we'll cover:*
 
 - Intros
 - Course Overview
 - Github workshop
 - The Internet
 
-for the weekend:
+*for the weekend:*
 
 - put up a basic site on github
 - if you need a refresh on HTML & CSS [Lynda](http://lynda.com) can help
