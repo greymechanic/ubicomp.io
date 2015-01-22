@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "intro"
+date:   2015-01-22 12:00:00
+categories: intro
+---
+> Computing, not computers will characterize the next era of the computer age. The critical focus in the very near future will be on ubiquitous access to pervasive and largely invisible computing resources.
+
+**overview**
+
+Once a centralized, monolithic system, the computer has shrunk and transformed itself into the mobile, wireless devices that ride in our pockets. Smart-phones and tablets with built-in web browsers, cameras, GPS trackers and a growing list of sensors, 'smart' badges and clothes, all are components of an emerging area of so-called ubiquitous computing. In marketing rhetoric and in actuality, these technologies have the potential to alter the way we think about space in paradoxical ways elevating the personal space of the individual, celebrating constant movement in physical space, while erasing the distinctions between geographic locales. These technologies offer new possibilities for artists, a mode of presentation that is intimate and personal, a tool for creating networks, a way to explore the boundaries between physical and virtual spaces. Students explore ways to create art with wireless devices and networks as they are introduced to programming tools for wireless platforms.
+
+**syllabus**
+
+<a class="scroll-on-page-link" href="{{ "/resources#pdfs" | prepend: site.baseurl }}"><b>PDFs</b></a>
+
+<a class="scroll-on-page-link" href="{{ "/resources#suggested-readings" | prepend: site.baseurl }}"><b>suggested readings</b></a>

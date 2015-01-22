@@ -1,0 +1,22 @@
+# Site settings
+title: Smartphone & Wireless Studio
+email: akaye@saic.edu
+description: >
+  Course site for Smartphone & Wireless Studio - Art & Technology Studies
+  / SAIC / Spring 2015. Built on <a href=http://atom.io>Atom</a>
+   with <a href=http://jekyllrb.com target=_blank>Jekyll</a>,
+  <a href=http://bourbon.io target=_blank>Bourbon</a>,
+  <a href=http://neat.bourbon.io target=_blank>Neat</a>, &
+  <a href=http://refills.bourbon.io target=_blank>Refills</a> using
+  <a href=http://sass-lang.com target=_blank>Sass</a> &
+  <a href=http://coffeescript.org target=_blank>Coffeescript</a>.
+  Code managed with <a href=http://github.com target=_blank>Github</a>
+   and deployed with <a href=http://codeship.com target=_blank>Codeship</a>
+   to a <a href=http://digitalocean.com target=_blank>Digital Ocean</a> droplet.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ubicomp.io" # the base hostname & protocol for your site
+twitter_username: notandrewkaye
+github_username:  notandrewkaye
+
+# Build settings
+markdown: kramdown

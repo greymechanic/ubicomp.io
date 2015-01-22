@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smartphone &amp; Wireless Studio</title>
+    <description>Course site for Smartphone &amp; Wireless Studio - Art &amp; Technology Studies / SAIC / Spring 2015. Built on &lt;a href=http://atom.io&gt;Atom&lt;/a&gt;
+ with &lt;a href=http://jekyllrb.com target=_blank&gt;Jekyll&lt;/a&gt;,
+&lt;a href=http://bourbon.io target=_blank&gt;Bourbon&lt;/a&gt;, &lt;a href=http://neat.bourbon.io target=_blank&gt;Neat&lt;/a&gt;, &amp; &lt;a href=http://refills.bourbon.io target=_blank&gt;Refills&lt;/a&gt; using &lt;a href=http://sass-lang.com target=_blank&gt;Sass&lt;/a&gt; &amp; &lt;a href=http://coffeescript.org target=_blank&gt;Coffeescript&lt;/a&gt;. Code managed with &lt;a href=http://github.com target=_blank&gt;Github&lt;/a&gt;
+ and deployed with &lt;a href=http://codeship.com target=_blank&gt;Codeship&lt;/a&gt;
+ to a &lt;a href=http://digitalocean.com target=_blank&gt;Digital Ocean&lt;/a&gt; droplet.
+</description>
+    <link>http://ubicomp.io/</link>
+    <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 19 Jan 2015 19:34:22 -0600</pubDate>
+    <lastBuildDate>Mon, 19 Jan 2015 19:34:22 -0600</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>One</title>
+        <description>&lt;p&gt;hi&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Jan 2015 10:00:00 -0600</pubDate>
+        <link>http://ubicomp.io/week/class/2015/01/22/one.html</link>
+        <guid isPermaLink="true">http://ubicomp.io/week/class/2015/01/22/one.html</guid>
+        
+        
+        <category>week</category>
+        
+        <category>class</category>
+        
+      </item>
+    
+      <item>
+        <title>intro</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Computing, not computers will characterize the next era of the computer age. The critical focus in the very near future will be on ubiquitous access to pervasive and largely invisible computing resources.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;overview&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once a centralized, monolithic system, the computer has shrunk and transformed itself into the mobile, wireless devices that ride in our pockets. Smart-phones and tablets with built-in web browsers, cameras, GPS trackers and a growing list of sensors, ‘smart’ badges and clothes, all are components of an emerging area of so-called ubiquitous computing. In marketing rhetoric and in actuality, these technologies have the potential to alter the way we think about space in paradoxical ways elevating the personal space of the individual, celebrating constant movement in physical space, while erasing the distinctions between geographic locales. These technologies offer new possibilities for artists, a mode of presentation that is intimate and personal, a tool for creating networks, a way to explore the boundaries between physical and virtual spaces. Students explore ways to create art with wireless devices and networks as they are introduced to programming tools for wireless platforms.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;syllabus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;scroll-on-page-link&quot; href=&quot;/resources#pdfs&quot;&gt;&lt;b&gt;PDFs&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;scroll-on-page-link&quot; href=&quot;/resources#suggested-readings&quot;&gt;&lt;b&gt;suggested readings&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Jan 2015 06:00:00 -0600</pubDate>
+        <link>http://ubicomp.io/intro/2015/01/22/intro.html</link>
+        <guid isPermaLink="true">http://ubicomp.io/intro/2015/01/22/intro.html</guid>
+        
+        
+        <category>intro</category>
+        
+      </item>
+    
+  </channel>
+</rss>
