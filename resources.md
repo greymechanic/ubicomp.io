@@ -5,7 +5,8 @@ permalink: /resources/
 ---
 Important stuff below!
 
-###[syllabus]()
+###[syllabus]({{ "/assets/PDFs/SmartphoneWirelessStudioSpring2015.pdf" | prepend: site.baseurl }})
+
 
 ###links
 
@@ -16,7 +17,7 @@ Important stuff below!
 [Phonegap](http://phonegap.com)
 
 ###PDFs
-[Wear Ware Where?](/assets/PDFs/www.pdf)
+[Wear Ware Where?]({{ "/assets/PDFs/www.pdf" | prepend: site.baseurl }})
 
 [Interactive Futures]()
 
@@ -24,9 +25,9 @@ Important stuff below!
 
 ###suggested readings
 
-[Computer for the 21st Century](/assets/PDFs/Weiser-Computer21stCentury-SciAm.pdf)
+[Computer for the 21st Century]({{ "/assets/PDFs/Weiser-Computer21stCentury-SciAm.pdf" | prepend: site.baseurl }})
 
-[Calm Technology](/assets/PDFs/calm-tech.pdf)
+[Calm Technology]({{ "/assets/PDFs/calm-tech.pdf" | prepend: site.baseurl }})
 
 [Digital Ground](http://www.amazon.com/Digital-Ground-Architecture-Pervasive-Environmental/dp/0262633272)
 

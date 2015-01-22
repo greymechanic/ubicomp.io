@@ -16,7 +16,7 @@ We're going to be thinking about how we can build smarter experiences one mobile
 
 **useful stuff**
 
-[syllabus]()
+[syllabus]({{ "/assets/PDFs/SmartphoneWirelessStudioSpring2015.pdf" | prepend: site.baseurl }})
 
 <a class="scroll-on-page-link" href="{{ "/resources#pdfs" | prepend: site.baseurl }}">PDFs</a>
 
