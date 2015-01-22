@@ -11,7 +11,7 @@ description: >
   <a href=http://sass-lang.com target=_blank>Sass</a> &
   <a href=http://coffeescript.org target=_blank>Coffeescript</a>.
   Code managed with <a href=http://github.com target=_blank>Github</a>
-   and deployed with <a href=http://codeship.com target=_blank>Codeship</a>
+   and deployed with <a href=http://dploy.io target=_blank>Dploy</a>
    to a <a href=http://digitalocean.com target=_blank>Digital Ocean</a> droplet.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ubicomp.io" # the base hostname & protocol for your site

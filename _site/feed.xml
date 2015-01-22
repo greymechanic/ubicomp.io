@@ -5,13 +5,13 @@
     <description>Course site for Smartphone &amp; Wireless Studio - Art &amp; Technology Studies / SAIC / Spring 2015. Built on &lt;a href=http://atom.io&gt;Atom&lt;/a&gt;
  with &lt;a href=http://jekyllrb.com target=_blank&gt;Jekyll&lt;/a&gt;,
 &lt;a href=http://bourbon.io target=_blank&gt;Bourbon&lt;/a&gt;, &lt;a href=http://neat.bourbon.io target=_blank&gt;Neat&lt;/a&gt;, &amp; &lt;a href=http://refills.bourbon.io target=_blank&gt;Refills&lt;/a&gt; using &lt;a href=http://sass-lang.com target=_blank&gt;Sass&lt;/a&gt; &amp; &lt;a href=http://coffeescript.org target=_blank&gt;Coffeescript&lt;/a&gt;. Code managed with &lt;a href=http://github.com target=_blank&gt;Github&lt;/a&gt;
- and deployed with &lt;a href=http://codeship.com target=_blank&gt;Codeship&lt;/a&gt;
+ and deployed with &lt;a href=http://dploy.io target=_blank&gt;Dploy&lt;/a&gt;
  to a &lt;a href=http://digitalocean.com target=_blank&gt;Digital Ocean&lt;/a&gt; droplet.
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Jan 2015 19:34:22 -0600</pubDate>
-    <lastBuildDate>Mon, 19 Jan 2015 19:34:22 -0600</lastBuildDate>
+    <pubDate>Wed, 21 Jan 2015 21:23:04 -0600</pubDate>
+    <lastBuildDate>Wed, 21 Jan 2015 21:23:04 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
