@@ -6,9 +6,8 @@
     });
     if ($("a.scroll-on-page-link").on("click touchstart")) {
       if ($(".js-menu,.js-menu-screen").hasClass("is-visible")) {
-        $(".js-menu,.js-menu-screen").toggleClass("is-visible");
+        return $(".js-menu,.js-menu-screen").toggleClass("is-visible");
       }
-      return e.preventDefault();
     }
   });
 
