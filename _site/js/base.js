@@ -1,9 +1,14 @@
 (function() {
   $(document).ready(function() {
-    return $(".js-menu-trigger,.js-menu-screen").on("click touchstart", function(e) {
+    $(".js-menu-trigger,.js-menu-screen").on("click touchstart", function(e) {
       $(".js-menu,.js-menu-screen").toggleClass("is-visible");
       return e.preventDefault();
     });
+    if ($("a.scroll-on-page-link").click) {
+      if ($(".js-menu,.js-menu-screen").hasClass("is-visible")) {
+        return $(".js-menu,.js-menu-screen").toggleClass("is-visible");
+      }
+    }
   });
 
   jQuery(function() {

@@ -1,7 +1,7 @@
 .sliding-menu-content {
   //////////////////////////////////////////////////////////////////////////////////
   font-family: $sans-serif;
-  
+
   ul {
     padding: 0;
     margin: 0;
@@ -38,7 +38,7 @@
     border-bottom: $sliding-menu-border;
     color: $sliding-menu-color;
     display: block;
-    font-weight: bold;
+    font-weight: normal;
     padding: 1em;
 
     &:focus {
