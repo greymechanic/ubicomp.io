@@ -504,6 +504,9 @@ pre {
   float: left; }
   .site-title, .site-title:visited {
     color: #424242; }
+  @media screen and (max-width: 600px) {
+    .site-title {
+      font-size: 18px; } }
 
 .site-nav {
   float: right;

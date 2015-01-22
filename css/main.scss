@@ -24,11 +24,11 @@ $brand-color:      darken($dark-grey, 25%);
 // Width of the content area
 $content-width:    800px;
 
-$on-palm:          600px;
+$mobile:          600px;
 $on-laptop:        800px;
 
 // Using media queries with like this:
-// @include media-query($on-palm) {
+// @include media-query($mobile) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;
