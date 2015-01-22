@@ -10,8 +10,8 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Jan 2015 21:57:36 -0600</pubDate>
-    <lastBuildDate>Wed, 21 Jan 2015 21:57:36 -0600</lastBuildDate>
+    <pubDate>Wed, 21 Jan 2015 22:00:01 -0600</pubDate>
+    <lastBuildDate>Wed, 21 Jan 2015 22:00:01 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -41,13 +41,15 @@
 
 &lt;p&gt;&lt;strong&gt;but for real&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;We’re going to be thinking about how we can build smarter experiences one mobile devices. From web apps with HTML &amp;amp; CSS, to iOS apps with Swift, and even Windows Phone apps with PhoneGap we’re going to push not only the technical limits, but also incorporate weekly readings and discussions into class.&lt;/p&gt;
+&lt;p&gt;We’re going to be thinking about how we can build smarter experiences one mobile devices. From web apps with HTML CSS &amp;amp; JS, to iOS apps with Swift, and even Windows Phone apps with PhoneGap we’re going to push not only the technical limits, but also incorporate weekly readings and discussions into class.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;syllabus&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;useful stuff&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&quot;scroll-on-page-link&quot; href=&quot;/resources#pdfs&quot;&gt;&lt;b&gt;PDFs&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;syllabus&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&quot;scroll-on-page-link&quot; href=&quot;/resources#suggested-readings&quot;&gt;&lt;b&gt;suggested readings&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;scroll-on-page-link&quot; href=&quot;/resources#pdfs&quot;&gt;PDFs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;scroll-on-page-link&quot; href=&quot;/resources#suggested-readings&quot;&gt;suggested readings&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 22 Jan 2015 06:00:00 -0600</pubDate>
         <link>http://ubicomp.io/intro/2015/01/22/intro.html</link>
