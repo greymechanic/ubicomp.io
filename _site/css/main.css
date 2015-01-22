@@ -640,6 +640,7 @@ pre {
         font-size: 16px; } }
 
 .sliding-menu-content {
+  font-family: "Open Sans", sans-serif;
   position: fixed;
   top: 0px;
   right: auto;
