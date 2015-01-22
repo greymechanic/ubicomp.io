@@ -212,7 +212,7 @@
         font-size: 36px;
     }
     @include media-query($mobile) {
-      font-size: 22px;
+      font-size: 26px;
     }
 }
 
@@ -225,6 +225,9 @@
         @include media-query($on-laptop) {
             font-size: 28px;
         }
+        @include media-query($mobile) {
+          font-size: 22px;
+        }
     }
 
     h3 {
@@ -233,6 +236,9 @@
         @include media-query($on-laptop) {
             font-size: 22px;
         }
+        @include media-query($mobile) {
+          font-size: 18px;
+        }
     }
 
     h4 {
@@ -240,6 +246,9 @@
 
         @include media-query($on-laptop) {
             font-size: 18px;
+        }
+        @include media-query($mobile) {
+          font-size: 16px;
         }
     }
 }
