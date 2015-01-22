@@ -4,9 +4,9 @@ $(document).ready ->
   $(".js-menu-trigger,.js-menu-screen").on "click touchstart", (e) ->
     $(".js-menu,.js-menu-screen").toggleClass "is-visible"
     e.preventDefault()
-  if $("a.scroll-on-page-link").click
+  if $("a.scroll-on-page-link").on "click touchstart"
     $(".js-menu,.js-menu-screen").toggleClass "is-visible" if $(".js-menu,.js-menu-screen").hasClass "is-visible"
-
+    e.preventDefault()
 
 jQuery ->
   jQuery.mark = jump: (options) ->
