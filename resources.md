@@ -9,10 +9,14 @@ Important stuff below!
 
 ###links
 
+[Github](http://github.com)
+
 [Parse](http://parse.io)
 
+[Phonegap](http://phonegap.com)
+
 ###PDFs
-[Wear Ware Where?]()
+[Wear Ware Where?](/assets/PDFs/www.pdf)
 
 [Interactive Futures]()
 
