@@ -211,16 +211,14 @@
     @include media-query($on-laptop) {
         font-size: 36px;
     }
+    @include media-query($mobile) {
+      font-size: 22px;
+    }
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
 
-    h1 {
-      @include media-query($mobile) {
-        font-size: 32px;
-      }
-    }
     h2 {
         font-size: 32px;
 

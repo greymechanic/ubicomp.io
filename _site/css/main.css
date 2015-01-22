@@ -608,12 +608,12 @@ pre {
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
+  @media screen and (max-width: 600px) {
+    .post-title {
+      font-size: 22px; } }
 
 .post-content {
   margin-bottom: 30px; }
-  @media screen and (max-width: 600px) {
-    .post-content h1 {
-      font-size: 32px; } }
   .post-content h2 {
     font-size: 32px; }
     @media screen and (max-width: 800px) {
