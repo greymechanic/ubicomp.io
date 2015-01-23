@@ -13,11 +13,11 @@ categories: >
 
 - Intros
 - Course Overview
-- Github workshop
+- [github](http://github.com) workshop
 - The Internet
 
 *for the weekend:*
 
-- put up a basic site on github
+- put up a basic site on [github](http://github.com)
 - if you need a refresh on HTML & CSS [Lynda](http://lynda.com) can help
 - read [Wear Ware Where?](/assets/PDFs/www.pdf)
