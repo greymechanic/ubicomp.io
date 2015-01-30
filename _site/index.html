@@ -130,6 +130,70 @@
         </article>
       </li>
     
+      <li id="Two">
+        
+          <h1 class="post-title">
+            <!-- <a class="post-link" href="/week/2015/01/27/two.html"> -->
+            
+              Parse!
+            
+            <!-- </a> -->
+            <span class="post-meta">Jan 27</span>
+          </h1>
+        
+        <article class="post-content">
+          <blockquote>
+  <p>The Parse platform provides a complete backend solution for your mobile application. Our goal is to totally eliminate the need for writing server code or maintaining servers.</p>
+</blockquote>
+
+<p><em>what we’ll cover:</em></p>
+
+<p>Using <a href="http://getbootstrap.com">Bootstrap</a> for a mobile site</p>
+
+<p>Download <a href="/assets/bootstrap-3.3.2-Cover.zip">this</a></p>
+
+<p>Getting started with <a href="http://parse.com">Parse</a></p>
+
+<p><em>for next week</em></p>
+
+<p>brainstorm ideas for web apps - think big and small</p>
+
+<p>come with some sketches/ideas for project 1</p>
+
+<p>Read <a href="http://www.20thingsilearned.com/en-US/web-apps">What are Web Apps?</a> &amp; <a href="http://alistapart.com/article/apps-vs-the-web">Apps vs the Web</a></p>
+
+<div class="expander">
+<a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
+<div id="js-expander-content-1" class="expander-content">
+
+    <div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">$</span><span class="o">(</span><span class="n">window</span><span class="o">).</span><span class="na">on</span><span class="o">(</span><span class="s">&quot;html_loaded&quot;</span><span class="o">,</span> <span class="n">function</span><span class="o">(</span><span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+
+  <span class="c1">// initialize parse</span>
+  <span class="n">Parse</span><span class="o">.</span><span class="na">initialize</span><span class="o">(</span><span class="s">&quot;application_id&quot;</span><span class="o">,</span><span class="s">&quot;javascript_key&quot;</span><span class="o">);</span>
+
+  <span class="c1">// do something when you click on a button</span>
+  <span class="n">$</span><span class="o">(</span><span class="s">&quot;.submitButton&quot;</span><span class="o">).</span><span class="na">click</span><span class="o">(</span><span class="n">function</span><span class="o">(</span><span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+
+    <span class="c1">// 1. Create a subclass of Parse.Object</span>
+    <span class="n">var</span> <span class="n">Comment</span> <span class="o">=</span> <span class="n">Parse</span><span class="o">.</span><span class="na">Object</span><span class="o">.</span><span class="na">extend</span><span class="o">(</span><span class="s">&quot;Comment&quot;</span><span class="o">);</span>
+
+    <span class="c1">// 2. Create a new instance of this subclass</span>
+    <span class="n">var</span> <span class="n">myComment</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Comment</span><span class="o">();</span>
+
+    <span class="c1">// 3. Add some data to the &quot;text&quot; key</span>
+    <span class="n">myComment</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">&quot;text&quot;</span><span class="o">,</span> <span class="s">&quot;none&quot;</span><span class="o">);</span>
+    <span class="n">myComment</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
+
+
+    <span class="o">});</span>
+    <span class="o">});</span></code></pre></div>
+
+  </div>
+</div>
+
+        </article>
+      </li>
+    
   </ul>
 
 </div>
@@ -213,6 +277,12 @@
       
         <li><a class="scroll-on-page-link" href="#One">
           Week One
+        </a></li>
+      
+    
+      
+        <li><a class="scroll-on-page-link" href="#Two">
+          Week Two
         </a></li>
       
     

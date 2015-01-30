@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>intro</title>
-  <meta name="description" content="  Computing, not computers will characterize the next era of the computer age. The critical focus in the very near future will be on ubiquitous access to per...">
+  <title>Two</title>
+  <meta name="description" content="  The Parse platform provides a complete backend solution for your mobile application. Our goal is to totally eliminate the need for writing server code or m...">
 
   <!-- css -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
   <!-- js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <link rel="canonical" href="http://ubicomp.io/intro/2015/01/22/intro.html">
+  <link rel="canonical" href="http://ubicomp.io/week/2015/01/27/two.html">
   <link rel="alternate" type="application/rss+xml" title="Smartphone & Wireless Studio" href="http://ubicomp.io/feed.xml" />
 </head>
 
@@ -60,31 +60,60 @@
       <div class="wrapper">
         <div class="post">
 
-  <header class="post-header" id="intro">
-    <h1 class="post-title">intro</h1>
-    <p class="post-meta">Jan 22, 2015</p>
+  <header class="post-header" id="Two">
+    <h1 class="post-title">Two</h1>
+    <p class="post-meta">Jan 27, 2015</p>
   </header>
 
   <article class="post-content">
     <blockquote>
-  <p>Computing, not computers will characterize the next era of the computer age. The critical focus in the very near future will be on ubiquitous access to pervasive and largely invisible computing resources.</p>
+  <p>The Parse platform provides a complete backend solution for your mobile application. Our goal is to totally eliminate the need for writing server code or maintaining servers.</p>
 </blockquote>
 
-<p><strong>overview</strong></p>
+<p><em>what we’ll cover:</em></p>
 
-<p>Once a centralized, monolithic system, the computer has shrunk and transformed itself into the mobile, wireless devices that ride in our pockets. Smart-phones and tablets with built-in web browsers, cameras, GPS trackers and a growing list of sensors, ‘smart’ badges and clothes, all are components of an emerging area of so-called ubiquitous computing. In marketing rhetoric and in actuality, these technologies have the potential to alter the way we think about space in paradoxical ways elevating the personal space of the individual, celebrating constant movement in physical space, while erasing the distinctions between geographic locales. These technologies offer new possibilities for artists, a mode of presentation that is intimate and personal, a tool for creating networks, a way to explore the boundaries between physical and virtual spaces. Students explore ways to create art with wireless devices and networks as they are introduced to programming tools for wireless platforms.</p>
+<p>Using <a href="http://getbootstrap.com">Bootstrap</a> for a mobile site</p>
 
-<p><strong>but for real</strong></p>
+<p>Download <a href="/assets/bootstrap-3.3.2-Cover.zip">this</a></p>
 
-<p>We’re going to be thinking about how we can build smarter experiences one mobile devices. From web apps with HTML CSS &amp; JS, to iOS apps with Swift, and even Windows Phone apps with PhoneGap we’re going to push not only the technical limits, but also incorporate weekly readings and discussions into class.</p>
+<p>Getting started with <a href="http://parse.com">Parse</a></p>
 
-<p><strong>useful stuff</strong></p>
+<p><em>for next week</em></p>
 
-<p><a href="/assets/PDFs/SmartphoneWirelessStudioSpring2015.pdf">syllabus</a></p>
+<p>brainstorm ideas for web apps - think big and small</p>
 
-<p><a class="scroll-on-page-link" href="/resources#pdfs">PDFs</a></p>
+<p>come with some sketches/ideas for project 1</p>
 
-<p><a class="scroll-on-page-link" href="/resources#suggested-readings">suggested readings</a></p>
+<p>Read <a href="http://www.20thingsilearned.com/en-US/web-apps">What are Web Apps?</a> &amp; <a href="http://alistapart.com/article/apps-vs-the-web">Apps vs the Web</a></p>
+
+<div class="expander">
+<a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
+<div id="js-expander-content-1" class="expander-content">
+
+    <div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">$</span><span class="o">(</span><span class="n">window</span><span class="o">).</span><span class="na">on</span><span class="o">(</span><span class="s">&quot;html_loaded&quot;</span><span class="o">,</span> <span class="n">function</span><span class="o">(</span><span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+
+  <span class="c1">// initialize parse</span>
+  <span class="n">Parse</span><span class="o">.</span><span class="na">initialize</span><span class="o">(</span><span class="s">&quot;application_id&quot;</span><span class="o">,</span><span class="s">&quot;javascript_key&quot;</span><span class="o">);</span>
+
+  <span class="c1">// do something when you click on a button</span>
+  <span class="n">$</span><span class="o">(</span><span class="s">&quot;.submitButton&quot;</span><span class="o">).</span><span class="na">click</span><span class="o">(</span><span class="n">function</span><span class="o">(</span><span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+
+    <span class="c1">// 1. Create a subclass of Parse.Object</span>
+    <span class="n">var</span> <span class="n">Comment</span> <span class="o">=</span> <span class="n">Parse</span><span class="o">.</span><span class="na">Object</span><span class="o">.</span><span class="na">extend</span><span class="o">(</span><span class="s">&quot;Comment&quot;</span><span class="o">);</span>
+
+    <span class="c1">// 2. Create a new instance of this subclass</span>
+    <span class="n">var</span> <span class="n">myComment</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Comment</span><span class="o">();</span>
+
+    <span class="c1">// 3. Add some data to the &quot;text&quot; key</span>
+    <span class="n">myComment</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">&quot;text&quot;</span><span class="o">,</span> <span class="s">&quot;none&quot;</span><span class="o">);</span>
+    <span class="n">myComment</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
+
+
+    <span class="o">});</span>
+    <span class="o">});</span></code></pre></div>
+
+  </div>
+</div>
 
   </article>
 

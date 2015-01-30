@@ -783,3 +783,28 @@ pre {
       width: 65.88078%; }
       .scroll-on-page article:last-child {
         margin-right: 0; } }
+
+.expander {
+  width: 100%; }
+  .expander .expander-trigger {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom: 1px solid #DDD;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.25em; }
+    .expander .expander-trigger:after {
+      font-size: 0.7em;
+      content: "\25BC";
+      margin-right: 0.5em;
+      float: right; }
+  .expander .expander-hidden:after {
+    font-size: 0.7em;
+    content: "\25BA";
+    float: right; }
+  .expander .expander-hidden + .expander-content {
+    display: none; }

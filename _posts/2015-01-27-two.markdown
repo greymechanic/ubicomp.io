@@ -1,8 +1,56 @@
 ---
 layout: post
 title:  "Two"
+subtitle: "Parse!"
 date:   2015-01-27 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week 2, init.
+> The Parse platform provides a complete backend solution for your mobile application. Our goal is to totally eliminate the need for writing server code or maintaining servers.
+
+*what we'll cover:*
+
+Using [Bootstrap](http://getbootstrap.com) for a mobile site
+
+Download [this]({{ "/assets/bootstrap-3.3.2-Cover.zip" | prepend: site.baseurl }})
+
+Getting started with [Parse](http://parse.com)
+
+
+*for next week*
+
+brainstorm ideas for web apps - think big and small
+
+come with some sketches/ideas for project 1
+
+Read [What are Web Apps?](http://www.20thingsilearned.com/en-US/web-apps) & [Apps vs the Web](http://alistapart.com/article/apps-vs-the-web)
+
+<div class="expander">
+<a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
+<div id="js-expander-content-1" class="expander-content" markdown="1">
+
+{% highlight java %}
+$(window).on("html_loaded", function(e) {
+
+  // initialize parse
+  Parse.initialize("application_id","javascript_key");
+
+  // do something when you click on a button
+  $(".submitButton").click(function(e) {
+
+    // 1. Create a subclass of Parse.Object
+    var Comment = Parse.Object.extend("Comment");
+
+    // 2. Create a new instance of this subclass
+    var myComment = new Comment();
+
+    // 3. Add some data to the "text" key
+    myComment.set("text", "none");
+    myComment.save();
+
+
+    });
+    });
+{% endhighlight%}
+</div>
+</div>
