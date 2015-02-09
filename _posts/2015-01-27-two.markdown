@@ -26,17 +26,16 @@ come with some sketches/ideas for project 1
 Read [What are Web Apps?](http://www.20thingsilearned.com/en-US/web-apps) & [Apps vs the Web](http://alistapart.com/article/apps-vs-the-web)
 
 <div class="expander">
-<a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
-<div id="js-expander-content-1" class="expander-content" markdown="1">
+  <a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
+  <div id="js-expander-content-1" class="expander-content" markdown="1">
 
-{% highlight java %}
-$(window).on("html_loaded", function(e) {
+    $(window).on("html_loaded", function(e) {
 
-  // initialize parse
-  Parse.initialize("application_id","javascript_key");
+    // initialize parse
+    Parse.initialize("application_id","javascript_key");
 
-  // do something when you click on a button
-  $(".submitButton").click(function(e) {
+    // do something when you click on a button
+    $(".submitButton").click(function(e) {
 
     // 1. Create a subclass of Parse.Object
     var Comment = Parse.Object.extend("Comment");
@@ -49,8 +48,25 @@ $(window).on("html_loaded", function(e) {
     myComment.save();
 
 
-    });
-    });
-{% endhighlight%}
+  });
+  });
+
+  </div>
 </div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Terminal Commands</a>
+  <div id="js-expander-content-2" class="expander-content" markdown="1">
+
+  * `cd` - change directory, use this to move to another folder
+  * `ls` - list files, lists the files in the current directory
+  * `pwd` - print working directory, shows your current location
+  * `git status` - get the status of your repository
+  * `git add filename` - adds the file(s) you want to commit
+  * `git commit -m "this is your commit message"` - commits the files added with the message you append
+  * `git push` - push your local commits to the repository online
+  * `git pull` - pull remote changes onto your local machine
+  * `sudo` - command to execute at an administrative leve[]()
+
+  </div>
 </div>

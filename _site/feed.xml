@@ -10,8 +10,8 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Jan 2015 18:04:36 -0600</pubDate>
-    <lastBuildDate>Thu, 29 Jan 2015 18:04:36 -0600</lastBuildDate>
+    <pubDate>Mon, 09 Feb 2015 08:15:19 -0600</pubDate>
+    <lastBuildDate>Mon, 09 Feb 2015 08:15:19 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -37,30 +37,49 @@
 &lt;p&gt;Read &lt;a href=&quot;http://www.20thingsilearned.com/en-US/web-apps&quot;&gt;What are Web Apps?&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://alistapart.com/article/apps-vs-the-web&quot;&gt;Apps vs the Web&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;expander&quot;&gt;
-&lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-1&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Parse Snippet&lt;/a&gt;
-&lt;div id=&quot;js-expander-content-1&quot; class=&quot;expander-content&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-1&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Parse Snippet&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-1&quot; class=&quot;expander-content&quot;&gt;
 
-    &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;html_loaded&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;pre&gt;&lt;code&gt;$(window).on(&quot;html_loaded&quot;, function(e) {
 
-  &lt;span class=&quot;c1&quot;&gt;// initialize parse&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;application_id&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;javascript_key&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+// initialize parse
+Parse.initialize(&quot;application_id&quot;,&quot;javascript_key&quot;);
 
-  &lt;span class=&quot;c1&quot;&gt;// do something when you click on a button&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;.submitButton&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+// do something when you click on a button
+$(&quot;.submitButton&quot;).click(function(e) {
 
-    &lt;span class=&quot;c1&quot;&gt;// 1. Create a subclass of Parse.Object&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Comment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Comment&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+// 1. Create a subclass of Parse.Object
+var Comment = Parse.Object.extend(&quot;Comment&quot;);
 
-    &lt;span class=&quot;c1&quot;&gt;// 2. Create a new instance of this subclass&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myComment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Comment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+// 2. Create a new instance of this subclass
+var myComment = new Comment();
 
-    &lt;span class=&quot;c1&quot;&gt;// 3. Add some data to the &amp;quot;text&amp;quot; key&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;myComment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;none&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;myComment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+// 3. Add some data to the &quot;text&quot; key
+myComment.set(&quot;text&quot;, &quot;none&quot;);
+myComment.save();
+&lt;/code&gt;&lt;/pre&gt;
 
+    &lt;p&gt;});
+  });&lt;/p&gt;
 
-    &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;expander&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-2&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Terminal Commands&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-2&quot; class=&quot;expander-content&quot;&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;cd&lt;/code&gt; - change directory, use this to move to another folder&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;ls&lt;/code&gt; - list files, lists the files in the current directory&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;pwd&lt;/code&gt; - print working directory, shows your current location&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git status&lt;/code&gt; - get the status of your repository&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git add filename&lt;/code&gt; - adds the file(s) you want to commit&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git commit -m &quot;this is your commit message&quot;&lt;/code&gt; - commits the files added with the message you append&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git push&lt;/code&gt; - push your local commits to the repository online&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git pull&lt;/code&gt; - pull remote changes onto your local machine&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;sudo&lt;/code&gt; - command to execute at an administrative leve[]()&lt;/li&gt;
+    &lt;/ul&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;

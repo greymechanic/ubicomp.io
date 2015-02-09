@@ -87,30 +87,49 @@
 <p>Read <a href="http://www.20thingsilearned.com/en-US/web-apps">What are Web Apps?</a> &amp; <a href="http://alistapart.com/article/apps-vs-the-web">Apps vs the Web</a></p>
 
 <div class="expander">
-<a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
-<div id="js-expander-content-1" class="expander-content">
+  <a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
+  <div id="js-expander-content-1" class="expander-content">
 
-    <div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">$</span><span class="o">(</span><span class="n">window</span><span class="o">).</span><span class="na">on</span><span class="o">(</span><span class="s">&quot;html_loaded&quot;</span><span class="o">,</span> <span class="n">function</span><span class="o">(</span><span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <pre><code>$(window).on("html_loaded", function(e) {
 
-  <span class="c1">// initialize parse</span>
-  <span class="n">Parse</span><span class="o">.</span><span class="na">initialize</span><span class="o">(</span><span class="s">&quot;application_id&quot;</span><span class="o">,</span><span class="s">&quot;javascript_key&quot;</span><span class="o">);</span>
+// initialize parse
+Parse.initialize("application_id","javascript_key");
 
-  <span class="c1">// do something when you click on a button</span>
-  <span class="n">$</span><span class="o">(</span><span class="s">&quot;.submitButton&quot;</span><span class="o">).</span><span class="na">click</span><span class="o">(</span><span class="n">function</span><span class="o">(</span><span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+// do something when you click on a button
+$(".submitButton").click(function(e) {
 
-    <span class="c1">// 1. Create a subclass of Parse.Object</span>
-    <span class="n">var</span> <span class="n">Comment</span> <span class="o">=</span> <span class="n">Parse</span><span class="o">.</span><span class="na">Object</span><span class="o">.</span><span class="na">extend</span><span class="o">(</span><span class="s">&quot;Comment&quot;</span><span class="o">);</span>
+// 1. Create a subclass of Parse.Object
+var Comment = Parse.Object.extend("Comment");
 
-    <span class="c1">// 2. Create a new instance of this subclass</span>
-    <span class="n">var</span> <span class="n">myComment</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Comment</span><span class="o">();</span>
+// 2. Create a new instance of this subclass
+var myComment = new Comment();
 
-    <span class="c1">// 3. Add some data to the &quot;text&quot; key</span>
-    <span class="n">myComment</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">&quot;text&quot;</span><span class="o">,</span> <span class="s">&quot;none&quot;</span><span class="o">);</span>
-    <span class="n">myComment</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
+// 3. Add some data to the "text" key
+myComment.set("text", "none");
+myComment.save();
+</code></pre>
 
+    <p>});
+  });</p>
 
-    <span class="o">});</span>
-    <span class="o">});</span></code></pre></div>
+  </div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Terminal Commands</a>
+  <div id="js-expander-content-2" class="expander-content">
+
+    <ul>
+      <li><code>cd</code> - change directory, use this to move to another folder</li>
+      <li><code>ls</code> - list files, lists the files in the current directory</li>
+      <li><code>pwd</code> - print working directory, shows your current location</li>
+      <li><code>git status</code> - get the status of your repository</li>
+      <li><code>git add filename</code> - adds the file(s) you want to commit</li>
+      <li><code>git commit -m "this is your commit message"</code> - commits the files added with the message you append</li>
+      <li><code>git push</code> - push your local commits to the repository online</li>
+      <li><code>git pull</code> - pull remote changes onto your local machine</li>
+      <li><code>sudo</code> - command to execute at an administrative leve[]()</li>
+    </ul>
 
   </div>
 </div>
