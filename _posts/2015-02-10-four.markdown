@@ -1,8 +1,20 @@
 ---
 layout: post
 title:  "Four"
+subtitle: "Prototype"
 date:   2015-02-10 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week four
+> First, solve the problem. Then, write the code.
+
+*what we'll cover:*
+
+- Discussion on readings
+- Presentation of ideas
+- Wireframing/Prototyping apps
+
+*for Thursday:*
+
+- Continue working on prototypes
+- Thursday, we'll hook up Parse and get rocking with these apps
