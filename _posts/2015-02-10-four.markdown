@@ -21,7 +21,7 @@ published: true
 
 [Go to this Internet of Things Workshop this Saturday!](http://talk.olab.io/t/the-internet-of-things-a-workshop-2-14-15-9am-5pm/738)
 
-*Sites we talked about in class:*
+*Apps we talked about in class:*
 
 - [Somebody](http://somebodyapp.com)
 - [Anki](http://ankisrs.net)
