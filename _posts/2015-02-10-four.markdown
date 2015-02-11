@@ -18,3 +18,15 @@ published: true
 
 - Continue working on prototypes
 - Thursday, we'll hook up Parse and get rocking with these apps
+
+[Go to this Internet of Things Workshop this Saturday!](http://talk.olab.io/t/the-internet-of-things-a-workshop-2-14-15-9am-5pm/738)
+
+*Sites we talked about in class:*
+
+- [Somebody](http://somebodyapp.com)
+- [Anki](http://ankisrs.net)
+- [IFTTT](https://ifttt.com/myrecipes/personal)
+- [MTN](https://itunes.apple.com/us/app/mtn/id891528055?mt=8)
+- [to.be](https://itunes.apple.com/us/app/to.be-camera/id879114494)
+- [three.js](http://threejs.org/examples/#webgl_interactive_cubes)
+- [Proxy,5-WM2A](http://whitney.org/Exhibitions/Artport/Commissions/Proxy)
