@@ -30,3 +30,62 @@ published: true
 - [to.be](https://itunes.apple.com/us/app/to.be-camera/id879114494)
 - [three.js](http://threejs.org/examples/#webgl_interactive_cubes)
 - [Proxy,5-WM2A](http://whitney.org/Exhibitions/Artport/Commissions/Proxy)
+
+###Thursday
+
+- [anyyolk game created with Parse](https://www.anyyolk.com)
+- [Skipping straight to PhoneGap](http://phonegap.com)
+- [Get the Desktop App](http://phonegap.com/blog/2014/12/11/phonegap-desktop-app-beta/)
+- [Get the Developer App](http://phonegap.com/blog/2014/11/26/phonegap-developer-app-1-4-0/)
+- [PhoneGap Documentation](http://docs.phonegap.com/en/edge/index.html)
+- [API Reference](http://docs.phonegap.com/en/1.2.0/phonegap_accelerometer_accelerometer.md.html#Accelerometer)
+- [Framework7](http://www.idangero.us/framework7/)
+
+*for the weekend:*
+
+- [Watch Golan Levin's talk on Art & Code](https://vimeo.com/5479898)
+- Continue working on prototypes
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">PhoneGap Accelerometer Snippet</a>
+  <div id="js-expander-content-2" class="expander-content" markdown="1">
+
+      <script type="text/javascript" charset="utf-8">
+          // The watch id references the current `watchAcceleration`
+           var watchID = null;
+
+           // Wait for PhoneGap to load
+           document.addEventListener("deviceready", onDeviceReady, false);
+
+           function onDeviceReady() {
+               startWatch();
+           }
+           // Start watching the acceleration
+           function startWatch() {
+               // Update acceleration every 3 seconds
+               var options = { frequency: 3000 };
+               watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+           }
+           // Stop watching the acceleration
+           function stopWatch() {
+               if (watchID) {
+                   navigator.accelerometer.clearWatch(watchID);
+                   watchID = null;
+               }
+           }
+           // onSuccess: Get a snapshot of the current acceleration
+           function onSuccess(acceleration) {
+               var element = document.getElementById('accelerometer');
+               element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
+                                   'Acceleration Y: ' + acceleration.y + '<br />' +
+                                   'Acceleration Z: ' + acceleration.z + '<br />' +
+                                   'Timestamp: '      + acceleration.timestamp + '<br />';
+           }
+           // onError: Failed to get the acceleration
+           function onError() {
+               alert('onError!');
+           }
+       </script>
+
+  </div>
+</div>

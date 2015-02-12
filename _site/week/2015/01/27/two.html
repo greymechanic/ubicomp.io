@@ -87,35 +87,6 @@
 <p>Read <a href="http://www.20thingsilearned.com/en-US/web-apps">What are Web Apps?</a> &amp; <a href="http://alistapart.com/article/apps-vs-the-web">Apps vs the Web</a></p>
 
 <div class="expander">
-  <a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
-  <div id="js-expander-content-1" class="expander-content">
-
-    <pre><code>$(window).on("html_loaded", function(e) {
-
-// initialize parse
-Parse.initialize("application_id","javascript_key");
-
-// do something when you click on a button
-$(".submitButton").click(function(e) {
-
-// 1. Create a subclass of Parse.Object
-var Comment = Parse.Object.extend("Comment");
-
-// 2. Create a new instance of this subclass
-var myComment = new Comment();
-
-// 3. Add some data to the "text" key
-myComment.set("text", "none");
-myComment.save();
-</code></pre>
-
-    <p>});
-  });</p>
-
-  </div>
-</div>
-
-<div class="expander">
   <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Terminal Commands</a>
   <div id="js-expander-content-2" class="expander-content">
 

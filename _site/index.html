@@ -163,35 +163,6 @@
 <p>Read <a href="http://www.20thingsilearned.com/en-US/web-apps">What are Web Apps?</a> &amp; <a href="http://alistapart.com/article/apps-vs-the-web">Apps vs the Web</a></p>
 
 <div class="expander">
-  <a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
-  <div id="js-expander-content-1" class="expander-content">
-
-    <pre><code>$(window).on("html_loaded", function(e) {
-
-// initialize parse
-Parse.initialize("application_id","javascript_key");
-
-// do something when you click on a button
-$(".submitButton").click(function(e) {
-
-// 1. Create a subclass of Parse.Object
-var Comment = Parse.Object.extend("Comment");
-
-// 2. Create a new instance of this subclass
-var myComment = new Comment();
-
-// 3. Add some data to the "text" key
-myComment.set("text", "none");
-myComment.save();
-</code></pre>
-
-    <p>});
-  });</p>
-
-  </div>
-</div>
-
-<div class="expander">
   <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Terminal Commands</a>
   <div id="js-expander-content-2" class="expander-content">
 
@@ -257,6 +228,70 @@ myComment.save();
   <li><a href="http://threejs.org/examples/#webgl_interactive_cubes">three.js</a></li>
   <li><a href="http://whitney.org/Exhibitions/Artport/Commissions/Proxy">Proxy,5-WM2A</a></li>
 </ul>
+
+<h3 id="thursday">Thursday</h3>
+
+<ul>
+  <li><a href="https://www.anyyolk.com">anyyolk game created with Parse</a></li>
+  <li><a href="http://phonegap.com">Skipping straight to PhoneGap</a></li>
+  <li><a href="http://phonegap.com/blog/2014/12/11/phonegap-desktop-app-beta/">Get the Desktop App</a></li>
+  <li><a href="http://phonegap.com/blog/2014/11/26/phonegap-developer-app-1-4-0/">Get the Developer App</a></li>
+  <li><a href="http://docs.phonegap.com/en/edge/index.html">PhoneGap Documentation</a></li>
+  <li><a href="http://docs.phonegap.com/en/1.2.0/phonegap_accelerometer_accelerometer.md.html#Accelerometer">API Reference</a></li>
+  <li><a href="http://www.idangero.us/framework7/">Framework7</a></li>
+</ul>
+
+<p><em>for the weekend:</em></p>
+
+<ul>
+  <li><a href="https://vimeo.com/5479898">Watch Golan Levin’s talk on Art &amp; Code</a></li>
+  <li>Continue working on prototypes</li>
+</ul>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">PhoneGap Accelerometer Snippet</a>
+  <div id="js-expander-content-2" class="expander-content">
+
+    <pre><code>  &lt;script type="text/javascript" charset="utf-8"&gt;
+      // The watch id references the current `watchAcceleration`
+       var watchID = null;
+
+       // Wait for PhoneGap to load
+       document.addEventListener("deviceready", onDeviceReady, false);
+
+       function onDeviceReady() {
+           startWatch();
+       }
+       // Start watching the acceleration
+       function startWatch() {
+           // Update acceleration every 3 seconds
+           var options = { frequency: 3000 };
+           watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+       }
+       // Stop watching the acceleration
+       function stopWatch() {
+           if (watchID) {
+               navigator.accelerometer.clearWatch(watchID);
+               watchID = null;
+           }
+       }
+       // onSuccess: Get a snapshot of the current acceleration
+       function onSuccess(acceleration) {
+           var element = document.getElementById('accelerometer');
+           element.innerHTML = 'Acceleration X: ' + acceleration.x + '&lt;br /&gt;' +
+                               'Acceleration Y: ' + acceleration.y + '&lt;br /&gt;' +
+                               'Acceleration Z: ' + acceleration.z + '&lt;br /&gt;' +
+                               'Timestamp: '      + acceleration.timestamp + '&lt;br /&gt;';
+       }
+       // onError: Failed to get the acceleration
+       function onError() {
+           alert('onError!');
+       }
+   &lt;/script&gt;
+</code></pre>
+
+  </div>
+</div>
 
         </article>
       </li>

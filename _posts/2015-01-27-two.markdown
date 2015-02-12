@@ -25,34 +25,6 @@ come with some sketches/ideas for project 1
 
 Read [What are Web Apps?](http://www.20thingsilearned.com/en-US/web-apps) & [Apps vs the Web](http://alistapart.com/article/apps-vs-the-web)
 
-<div class="expander">
-  <a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Parse Snippet</a>
-  <div id="js-expander-content-1" class="expander-content" markdown="1">
-
-    $(window).on("html_loaded", function(e) {
-
-    // initialize parse
-    Parse.initialize("application_id","javascript_key");
-
-    // do something when you click on a button
-    $(".submitButton").click(function(e) {
-
-    // 1. Create a subclass of Parse.Object
-    var Comment = Parse.Object.extend("Comment");
-
-    // 2. Create a new instance of this subclass
-    var myComment = new Comment();
-
-    // 3. Add some data to the "text" key
-    myComment.set("text", "none");
-    myComment.save();
-
-
-  });
-  });
-
-  </div>
-</div>
 
 <div class="expander">
   <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Terminal Commands</a>
