@@ -25,3 +25,5 @@ published: true
 - 3/7 OR 3/14 Saturday Make-up class
 - 4/2 Beta Launch
 - 5/5 & 5/7 Launch!
+
+[PhoneGap Dev Cookbook Chapter 1]({{ "/assets/PDFs/phonegap_cookbook_ch1.pdf" | prepend: site.baseurl }})

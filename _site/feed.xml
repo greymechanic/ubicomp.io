@@ -10,8 +10,8 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Feb 2015 12:51:14 -0600</pubDate>
-    <lastBuildDate>Tue, 17 Feb 2015 12:51:14 -0600</lastBuildDate>
+    <pubDate>Tue, 17 Feb 2015 12:54:53 -0600</pubDate>
+    <lastBuildDate>Tue, 17 Feb 2015 12:54:53 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -39,6 +39,8 @@
   &lt;li&gt;4/2 Beta Launch&lt;/li&gt;
   &lt;li&gt;5/5 &amp;amp; 5/7 Launch!&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/PDFs/phonegap_cookbook_ch1.pdf&quot;&gt;PhoneGap Dev Cookbook Chapter 1&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 17 Feb 2015 01:00:00 -0600</pubDate>
         <link>http://ubicomp.io/week/2015/02/17/five.html</link>
