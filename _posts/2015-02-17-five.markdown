@@ -1,8 +1,27 @@
 ---
 layout: post
 title:  "Five"
+subtitle: "PhoneGap"
 date:   2015-02-17 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week 5
+
+*what we'll cover:*
+
+- Video discussion
+- Movement & Location w/ PhoneGap
+- Continue Working on Apps
+
+*for Thursday:*
+
+- Continue working on prototypes
+- Thursday, we'll continue with PhoneGap
+
+
+*looking ahead:*
+
+- 3/12 Alpha Launch
+- 3/7 OR 3/14 Saturday Make-up class
+- 4/2 Beta Launch
+- 5/5 & 5/7 Launch!
