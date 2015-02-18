@@ -334,6 +334,109 @@
 
 <p><a href="/assets/PDFs/phonegap_cookbook_ch1.pdf">PhoneGap Dev Cookbook Chapter 1</a></p>
 
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">PhoneGap Device Info</a>
+  <div id="js-expander-content-2" class="expander-content">
+
+    <pre><code>getInfo: function(){
+    document.getElementById("deviceName").innerHTML
+    = device.name;
+    document.getElementById("version").innerHTML
+    = device.phonegap;
+    document.getElementById("mobilePlatform").innerHTML
+    = device.platform;
+    document.getElementById("platformVersion").innerHTML
+    = device.version;
+    document.getElementById("uuid").innerHTML
+    = device.uuid;
+}
+
+&lt;/div&gt;
+</code></pre>
+  </div>
+
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-B" class="expander-trigger expander-hidden demo">PhoneGap GeoLocation Code Snippet</a>
+  <div id="js-expander-content-B" class="expander-content">
+
+      <pre><code>bindEvents: function() {
+   document.addEventListener('deviceready', this.onDeviceReady, false);
+   navigator.geolocation.getCurrentPosition(this.onSuccess, this.onError);
+},
+// deviceready Event Handler
+//
+// The scope of 'this' is the event. In order to call the 'receivedEvent'
+// function, we must explicitly call 'app.receivedEvent(...);'
+onDeviceReady: function() {
+   var ready = document.getElementById('ready');
+   ready.innerHTML = 'ready..'
+   app.receivedEvent('deviceready');
+},
+
+onSuccess: function(position) {
+   var geo = document.getElementById('geo');
+   var getG = document.getElementById('getGeo');
+
+   geo.innerHTML = 'geo data:'
+   var geoElement = document.getElementById('geolocationData');
+
+   $(getG).on('click', function(e) {
+       e.preventDefault();
+
+       geoElement.innerHTML = 'Latitude: ' + position.coords.latitude + '&lt;br /&gt;' +
+           'Longitude: ' + position.coords.longitude + '&lt;br /&gt;' +
+           'Altitude: ' + position.coords.altitude + '&lt;br /&gt;' +
+           'Accuracy: ' + position.coords.accuracy + '&lt;br /&gt;' +
+           'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '&lt;br /&gt;' +
+           'Heading: ' + position.coords.heading + '&lt;br /&gt;' +
+           'Speed: ' + position.coords.speed + '&lt;br /&gt;' +
+           'Timestamp: ' + position.timestamp + '&lt;br /&gt;';
+  });
+},
+// Run if we face an error
+// obtaining the position data
+onError: function(error) {
+   var errString = '';
+   // Check to see if we have received an error code
+   if(error.code) {
+       // If we have, handle it by case
+       switch(error.code) {
+           case 1: // PERMISSION_DENIED
+           errString =
+           'Unable to obtain the location information ' +
+           'because the device does not have permission '+
+           'to the use that service.';
+           break;
+           case 2: // POSITION_UNAVAILABLE
+           errString =
+           'Unable to obtain the location information ' +
+           'because the device location could not ' +
+           'be determined.';
+           break;
+           case 3: // TIMEOUT
+           errString =
+           'Unable to obtain the location within the ' +
+           'specified time allocation.';
+           break;
+           default: // UNKOWN_ERROR
+           errString =
+           'Unable to obtain the location of the ' +
+           'device due to an unknown error.';
+           break;
+       }
+   }
+   // Handle any errors we may face
+   var element = document.getElementById('geolocationData');
+   element.innerHTML = errString;
+   var geo = document.getElementById('geo');
+   geo.innerHTML = 'no geo'
+},
+</code></pre>
+    </div>
+</div>
+</div>
+
         </article>
       </li>
     
