@@ -26,6 +26,12 @@ published: true
 - 4/2 Beta Launch
 - 5/5 & 5/7 Launch!
 
+*videos!*
+
+- [Clay Shirkey - How the Internet Changes Things](http://www.ted.com/talks/clay_shirky_how_the_internet_will_one_day_transform_government)
+- [Sherry Turkle - Alone Together?](http://www.ted.com/talks/sherry_turkle_alone_together?language=en)
+- [Bret Victor - The Future of Programming](https://vimeo.com/71278954)
+
 [PhoneGap Dev Cookbook Chapter 1]({{ "/assets/PDFs/phonegap_cookbook_ch1.pdf" | prepend: site.baseurl }})
 
 <div class="expander">
