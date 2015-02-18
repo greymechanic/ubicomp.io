@@ -27,3 +27,23 @@ published: true
 - 5/5 & 5/7 Launch!
 
 [PhoneGap Dev Cookbook Chapter 1]({{ "/assets/PDFs/phonegap_cookbook_ch1.pdf" | prepend: site.baseurl }})
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">PhoneGap Device Info</a>
+  <div id="js-expander-content-2" class="expander-content" markdown="1">
+
+    getInfo: function(){
+        document.getElementById("deviceName").innerHTML
+        = device.name;
+        document.getElementById("version").innerHTML
+        = device.phonegap;
+        document.getElementById("mobilePlatform").innerHTML
+        = device.platform;
+        document.getElementById("platformVersion").innerHTML
+        = device.version;
+        document.getElementById("uuid").innerHTML
+        = device.uuid;
+    }
+
+    </div>
+</div>
