@@ -21,8 +21,8 @@ published: true
 
 *looking ahead:*
 
+- 3/8 @ 10AM - Sunday Make-up class
 - 3/12 Alpha Launch
-- 3/7 OR 3/14 Saturday Make-up class
 - 4/2 Beta Launch
 - 5/5 & 5/7 Launch!
 
@@ -33,6 +33,21 @@ published: true
 - [Bret Victor - The Future of Programming](https://vimeo.com/71278954)
 
 [PhoneGap Dev Cookbook Chapter 1]({{ "/assets/PDFs/phonegap_cookbook_ch1.pdf" | prepend: site.baseurl }})
+
+[Download the Demo from Tuesday's Class]({{ "/assets/GeoTest.zip" | prepend: site.baseurl }})
+
+###Thursday
+
+- [Github](https://github.com)
+- [Github Mac Client](https://mac.github.com) / [Windows Client](https://windows.github.com)
+- [PhoneGap Creative Cloud](https://creative.adobe.com/products/phonegap-build)
+- [PhoneGap Build](https://build.phonegap.com)
+- [PageSlider Example](https://github.com/ccoenraets/PageSlider)
+
+*for the weekend:*
+
+- Study HTML CSS & Javascript
+- Continue working on Apps
 
 <div class="expander">
   <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">PhoneGap Device Info</a>
