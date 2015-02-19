@@ -36,6 +36,7 @@ published: true
 
 [Download the Demo from Tuesday's Class]({{ "/assets/GeoTest.zip" | prepend: site.baseurl }})
 
+
 ###Thursday
 
 - [Github](https://github.com)
