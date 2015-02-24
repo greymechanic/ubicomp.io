@@ -1,8 +1,87 @@
 ---
 layout: post
 title:  "Six"
+subtitle: "JavaScript"
 date:   2015-02-24 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week 6
+
+*what we'll cover:*
+
+- [CSS Diner](http://flukeout.github.io)
+- recording w/ PhoneGap
+- Continue Working on Apps
+
+*for Thursday:*
+
+- Continue working on prototypes
+- Thursday, we'll continue with JavaScript
+
+
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Touch and Hold Snippet</a>
+  <div id="js-expander-content-2" class="expander-content" markdown="1">
+
+    // use: .on('tap', function() {}) to trigger
+
+    $.event.special.tap = {
+
+    // Abort tap if touch moves further than 10 pixels in any direction
+    distanceThreshold: 10,
+    // Abort tap if touch lasts longer than half a second
+    timeThreshold: 500,
+    setup: function() {
+      var self = this,
+        $self = $(self);
+
+        // Bind touch start
+        $self.on('touchstart', function(startEvent) {
+          // Save the target element of the start event
+          var target = startEvent.target,
+            touchStart = startEvent.originalEvent.touches[0],
+            startX = touchStart.pageX,
+            startY = touchStart.pageY,
+            threshold = $.event.special.tap.distanceThreshold,
+            timeout;
+
+          function removeTapHandler() {
+            clearTimeout(timeout);
+            $self.off('touchmove', moveHandler).off('touchend', tapHandler);
+          };
+
+          function tapHandler(endEvent) {
+            removeTapHandler();
+
+            // When the touch end event fires, check if the target of the
+            // touch end is the same as the target of the start, and if
+            // so, fire a click.
+            if (target == endEvent.target) {
+              $.event.simulate('tap', self, endEvent);
+            }
+          };
+
+          // Remove tap and move handlers if the touch moves too far
+          function moveHandler(moveEvent) {
+            var touchMove = moveEvent.originalEvent.touches[0],
+              moveX = touchMove.pageX,
+              moveY = touchMove.pageY;
+
+            if (Math.abs(moveX - startX) > threshold ||
+                Math.abs(moveY - startY) > threshold) {
+              removeTapHandler();
+            }
+          };
+
+          // Remove the tap and move handlers if the timeout expires
+          timeout = setTimeout(removeTapHandler, $.event.special.tap.timeThreshold);
+
+          // When a touch starts, bind a touch end and touch move handler
+          $self.on('touchmove', moveHandler).on('touchend', tapHandler);
+        });
+      }
+    };
+
+</div>
+</div>

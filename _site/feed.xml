@@ -10,9 +10,102 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Feb 2015 09:15:25 -0600</pubDate>
-    <lastBuildDate>Thu, 19 Feb 2015 09:15:25 -0600</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Tue, 24 Feb 2015 17:34:41 -0600</pubDate>
+    <lastBuildDate>Tue, 24 Feb 2015 17:34:41 -0600</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Six</title>
+        <description>&lt;p&gt;&lt;em&gt;what we’ll cover:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://flukeout.github.io&quot;&gt;CSS Diner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;recording w/ PhoneGap&lt;/li&gt;
+  &lt;li&gt;Continue Working on Apps&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;for Thursday:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Continue working on prototypes&lt;/li&gt;
+  &lt;li&gt;Thursday, we’ll continue with JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;expander&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-2&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Touch and Hold Snippet&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-2&quot; class=&quot;expander-content&quot;&gt;
+
+    &lt;pre&gt;&lt;code&gt;// use: .on(&#39;tap&#39;, function() {}) to trigger
+
+$.event.special.tap = {
+
+// Abort tap if touch moves further than 10 pixels in any direction
+distanceThreshold: 10,
+// Abort tap if touch lasts longer than half a second
+timeThreshold: 500,
+setup: function() {
+  var self = this,
+    $self = $(self);
+
+    // Bind touch start
+    $self.on(&#39;touchstart&#39;, function(startEvent) {
+      // Save the target element of the start event
+      var target = startEvent.target,
+        touchStart = startEvent.originalEvent.touches[0],
+        startX = touchStart.pageX,
+        startY = touchStart.pageY,
+        threshold = $.event.special.tap.distanceThreshold,
+        timeout;
+
+      function removeTapHandler() {
+        clearTimeout(timeout);
+        $self.off(&#39;touchmove&#39;, moveHandler).off(&#39;touchend&#39;, tapHandler);
+      };
+
+      function tapHandler(endEvent) {
+        removeTapHandler();
+
+        // When the touch end event fires, check if the target of the
+        // touch end is the same as the target of the start, and if
+        // so, fire a click.
+        if (target == endEvent.target) {
+          $.event.simulate(&#39;tap&#39;, self, endEvent);
+        }
+      };
+
+      // Remove tap and move handlers if the touch moves too far
+      function moveHandler(moveEvent) {
+        var touchMove = moveEvent.originalEvent.touches[0],
+          moveX = touchMove.pageX,
+          moveY = touchMove.pageY;
+
+        if (Math.abs(moveX - startX) &amp;gt; threshold ||
+            Math.abs(moveY - startY) &amp;gt; threshold) {
+          removeTapHandler();
+        }
+      };
+
+      // Remove the tap and move handlers if the timeout expires
+      timeout = setTimeout(removeTapHandler, $.event.special.tap.timeThreshold);
+
+      // When a touch starts, bind a touch end and touch move handler
+      $self.on(&#39;touchmove&#39;, moveHandler).on(&#39;touchend&#39;, tapHandler);
+    });
+  }
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 24 Feb 2015 01:00:00 -0600</pubDate>
+        <link>http://ubicomp.io/week/2015/02/24/six.html</link>
+        <guid isPermaLink="true">http://ubicomp.io/week/2015/02/24/six.html</guid>
+        
+        
+        <category>week</category>
+        
+      </item>
     
       <item>
         <title>Five</title>
