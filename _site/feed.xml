@@ -10,8 +10,8 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Feb 2015 17:34:41 -0600</pubDate>
-    <lastBuildDate>Tue, 24 Feb 2015 17:34:41 -0600</lastBuildDate>
+    <pubDate>Tue, 24 Feb 2015 17:36:47 -0600</pubDate>
+    <lastBuildDate>Tue, 24 Feb 2015 17:36:47 -0600</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -30,6 +30,8 @@
   &lt;li&gt;Continue working on prototypes&lt;/li&gt;
   &lt;li&gt;Thursday, we’ll continue with JavaScript&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/PDFs/phonegap_development_cookbook_3.pdf&quot;&gt;PhoneGap Cookbook Chapter 3&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;expander&quot;&gt;
   &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-2&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Touch and Hold Snippet&lt;/a&gt;

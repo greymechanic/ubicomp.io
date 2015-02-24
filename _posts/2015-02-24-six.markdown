@@ -18,6 +18,7 @@ published: true
 - Continue working on prototypes
 - Thursday, we'll continue with JavaScript
 
+[PhoneGap Cookbook Chapter 3]({{ "/assets/PDFs/phonegap_development_cookbook_3.pdf" | prepend: site.baseurl }})
 
 
 <div class="expander">
