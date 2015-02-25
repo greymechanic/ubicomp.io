@@ -10,6 +10,7 @@ published: true
 *what we'll cover:*
 
 - [CSS Diner](http://flukeout.github.io)
+- [PhoneGap Touch Event Demo](https://github.com/notandrewkaye/touchMe)
 - recording w/ PhoneGap
 - Continue Working on Apps
 
