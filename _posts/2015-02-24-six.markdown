@@ -11,6 +11,8 @@ published: true
 
 - [CSS Diner](http://flukeout.github.io)
 - [PhoneGap Touch Event Demo](https://github.com/notandrewkaye/touchMe)
+- [KineticJS Wiki Page](https://github.com/ericdrowell/KineticJS/wiki)
+- [touchSwipe jQuery Library](http://labs.rampinteractive.co.uk/touchSwipe/demos/)
 - recording w/ PhoneGap
 - Continue Working on Apps
 
