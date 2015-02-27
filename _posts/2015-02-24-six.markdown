@@ -23,6 +23,12 @@ published: true
 
 [PhoneGap Cookbook Chapter 3]({{ "/assets/PDFs/phonegap_development_cookbook_3.pdf" | prepend: site.baseurl }})
 
+###Thursday
+
+- [MBaaS](http://www.smashingmagazine.com/2014/12/15/understanding-mobile-back-end-as-a-service/)
+
+Tuesday we start with [Parse](https://parse.com)! Get your Apps in line!
+
 
 <div class="expander">
   <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Touch and Hold Snippet</a>

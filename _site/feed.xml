@@ -10,9 +10,9 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Feb 2015 19:39:49 -0600</pubDate>
-    <lastBuildDate>Tue, 24 Feb 2015 19:39:49 -0600</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Thu, 26 Feb 2015 18:05:33 -0600</pubDate>
+    <lastBuildDate>Thu, 26 Feb 2015 18:05:33 -0600</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Six</title>
@@ -35,6 +35,14 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/PDFs/phonegap_development_cookbook_3.pdf&quot;&gt;PhoneGap Cookbook Chapter 3&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;thursday&quot;&gt;Thursday&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2014/12/15/understanding-mobile-back-end-as-a-service/&quot;&gt;MBaaS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tuesday we start with &lt;a href=&quot;https://parse.com&quot;&gt;Parse&lt;/a&gt;! Get your Apps in line!&lt;/p&gt;
 
 &lt;div class=&quot;expander&quot;&gt;
   &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-2&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Touch and Hold Snippet&lt;/a&gt;
