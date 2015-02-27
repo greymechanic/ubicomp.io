@@ -25,9 +25,8 @@ published: true
 
 ###Thursday
 
-- [MBaaS](http://www.smashingmagazine.com/2014/12/15/understanding-mobile-back-end-as-a-service/)
-
-Tuesday we start with [Parse](https://parse.com)! Get your Apps in line!
+- Tuesday we start with [Parse](https://parse.com)! Get your Apps in line!
+- Read about [MBaaS](http://www.smashingmagazine.com/2014/12/15/understanding-mobile-back-end-as-a-service/)
 
 
 <div class="expander">
