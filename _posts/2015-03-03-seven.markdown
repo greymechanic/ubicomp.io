@@ -1,8 +1,169 @@
 ---
 layout: post
 title:  "Seven"
+subtitle: "Data"
 date:   2015-03-03 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week 7
+
+![Data]({{ "/assets/data.gif" | prepend: site.baseurl }})
+
+
+*what we'll cover:*
+
+- [Parse Javascript SDK](https://www.parse.com/products/javascript)
+- [Example Parse App](https://parse.com/tutorials/anypic)
+- [Parse Backbone Tutorial](https://www.parse.com/tutorials/todo-app-with-javascript)
+- [handlebars js library](http://handlebarsjs.com/)
+
+
+*for Thursday:*
+
+- Think about how Parse fits in your app (if at all)
+- Sketch out your app's architecture
+- Don't forget about our make-up class this Sunday @ 10AM
+
+
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-5" class="expander-trigger expander-hidden demo">Parse Test Object</a>
+  <div id="js-expander-content-5" class="expander-content" markdown="1">
+
+    $(function() {
+
+        Parse.$ = jQuery;
+
+        // Replace this line with the one on your Quickstart Guide Page
+        Parse.initialize("W8vTW6MTre3g0ScTeyPzqc6Uzj2KZoQ6GBv0j6ZC", "VVayP3EdZ6QH0QMttzpWgeJ2if4f2m8QjA10SaFQ");
+
+        var TestObject = Parse.Object.extend("TestObject");
+        var testObject = new TestObject();
+        testObject.save({foo: "bar"}).then(function(object) {
+          alert("yay! it worked");
+        });
+
+    });
+
+</div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-0" class="expander-trigger expander-hidden demo">Parse Example Data Fetch</a>
+  <div id="js-expander-content-0" class="expander-content" markdown="1">
+
+    var Data = Parse.Object.extend("Data");
+
+    var DataSet = Parse.Collection.extend({
+        model: Data
+    });
+
+    var dataSet = new DataSet();
+
+    dataSet.fetch({
+        success: function(dataSet) {
+            console.log(dataSet);
+        },
+        error: function(dataSet, error) {
+            console.log(error);
+        }
+    });
+
+</div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">JS Template</a>
+  <div id="js-expander-content-1" class="expander-content" markdown="1">
+
+    <script id="dataSet-tpl" type="text/x-handlebars-template">
+        <div class="data">
+            <h2 class="name"><a href="#">A name</a></h2>
+            <p class="meta">A time</p>
+            <div>Some content</div>
+        </div>
+    </script>
+
+</div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Handlebars</a>
+  <div id="js-expander-content-2" class="expander-content" markdown="1">
+
+    // handlebars uses { {  } } to reference object variables
+
+    { {name} } // to get the name
+
+    { {#each data} }
+      // this allows you to iterate through class rows
+    { {/each} }
+
+    { { { } } } // use a triple-stash for referencing data with html tags that need to be rendered
+
+</div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-3" class="expander-trigger expander-hidden demo">DataSet View</a>
+  <div id="js-expander-content-3" class="expander-content" markdown="1">
+
+    var DataSetView =  Parse.View.extend({
+        template: Handlebars.compile($('#dataSet-tpl').html()),
+        render: function(){
+            var collection = { data: this.collection.toJSON() };
+            this.$el.html(this.template(collection));
+        }
+    });
+
+    success: function(dataSet) {
+        var dataSetView = new DataSetView({ collection: dataSet });
+        dataSetView.render();
+        $('.main-container').html(dataSetView.el);
+    }
+
+</div>
+</div>
+
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-4" class="expander-trigger expander-hidden demo">Putting it all Together</a>
+  <div id="js-expander-content-4" class="expander-content" markdown="1">
+
+    $(function() {
+
+    	Parse.$ = jQuery;
+
+    	Parse.initialize("YOUR CODE HERE", "YOUR CODE HERE");
+
+
+      var Data = Parse.Object.extend("Data"),
+        DataSet = Parse.Collection.extend({
+            model: Data
+        }),
+
+        var DataSetView =  Parse.View.extend({
+            template: Handlebars.compile($('#dataSet-tpl').html()),
+            render: function(){
+                var collection = { data: this.collection.toJSON() };
+                this.$el.html(this.template(collection));
+            }
+        });
+
+        dataSet = new DataSet();
+
+        dataSet.fetch({
+            success: function(dataSet) {
+                var blogsView = new BlogsView({ collection: blogs });
+                blogsView.render();
+                $('.main-container').html(blogsView.el);
+            },
+            error: function(dataSet, error) {
+                console.log(error);
+            }
+        });
+
+    });
+
+</div>
+</div>

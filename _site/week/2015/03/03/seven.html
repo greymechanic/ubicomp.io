@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>intro</title>
-  <meta name="description" content="  Computing, not computers will characterize the next era of the computer age. The critical focus in the very near future will be on ubiquitous access to per...">
+  <title>Seven</title>
+  <meta name="description" content="">
 
   <!-- css -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
   <!-- js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <link rel="canonical" href="http://ubicomp.io/intro/2015/01/22/intro.html">
+  <link rel="canonical" href="http://ubicomp.io/week/2015/03/03/seven.html">
   <link rel="alternate" type="application/rss+xml" title="Smartphone & Wireless Studio" href="http://ubicomp.io/feed.xml" />
 </head>
 
@@ -60,31 +60,177 @@
       <div class="wrapper">
         <div class="post">
 
-  <header class="post-header" id="intro">
-    <h1 class="post-title">intro</h1>
-    <p class="post-meta">Jan 22, 2015</p>
+  <header class="post-header" id="Seven">
+    <h1 class="post-title">Seven</h1>
+    <p class="post-meta">Mar 3, 2015</p>
   </header>
 
   <article class="post-content">
-    <blockquote>
-  <p>Computing, not computers will characterize the next era of the computer age. The critical focus in the very near future will be on ubiquitous access to pervasive and largely invisible computing resources.</p>
-</blockquote>
+    <p><img src="/assets/data.gif" alt="Data" /></p>
 
-<p><strong>overview</strong></p>
+<p><em>what we’ll cover:</em></p>
 
-<p>Once a centralized, monolithic system, the computer has shrunk and transformed itself into the mobile, wireless devices that ride in our pockets. Smart-phones and tablets with built-in web browsers, cameras, GPS trackers and a growing list of sensors, ‘smart’ badges and clothes, all are components of an emerging area of so-called ubiquitous computing. In marketing rhetoric and in actuality, these technologies have the potential to alter the way we think about space in paradoxical ways elevating the personal space of the individual, celebrating constant movement in physical space, while erasing the distinctions between geographic locales. These technologies offer new possibilities for artists, a mode of presentation that is intimate and personal, a tool for creating networks, a way to explore the boundaries between physical and virtual spaces. Students explore ways to create art with wireless devices and networks as they are introduced to programming tools for wireless platforms.</p>
+<ul>
+  <li><a href="https://www.parse.com/products/javascript">Parse Javascript SDK</a></li>
+  <li><a href="https://parse.com/tutorials/anypic">Example Parse App</a></li>
+  <li><a href="https://www.parse.com/tutorials/todo-app-with-javascript">Parse Backbone Tutorial</a></li>
+  <li><a href="http://handlebarsjs.com/">handlebars js library</a></li>
+</ul>
 
-<p><strong>but for real</strong></p>
+<p><em>for Thursday:</em></p>
 
-<p>We’re going to be thinking about how we can build smarter experiences one mobile devices. From web apps with HTML CSS &amp; JS, to iOS apps with Swift, and even Windows Phone apps with PhoneGap we’re going to push not only the technical limits, but also incorporate weekly readings and discussions into class.</p>
+<ul>
+  <li>Think about how Parse fits in your app (if at all)</li>
+  <li>Sketch out your app’s architecture</li>
+  <li>Don’t forget about our make-up class this Sunday @ 10AM</li>
+</ul>
 
-<p><strong>useful stuff</strong></p>
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-5" class="expander-trigger expander-hidden demo">Parse Test Object</a>
+  <div id="js-expander-content-5" class="expander-content">
 
-<p><a href="/assets/PDFs/SmartphoneWirelessStudioSpring2015.pdf">syllabus</a></p>
+    <pre><code>$(function() {
 
-<p><a class="scroll-on-page-link" href="/resources#pdfs">PDFs</a></p>
+    Parse.$ = jQuery;
 
-<p><a class="scroll-on-page-link" href="/resources#suggested-readings">suggested readings</a></p>
+    // Replace this line with the one on your Quickstart Guide Page
+    Parse.initialize("W8vTW6MTre3g0ScTeyPzqc6Uzj2KZoQ6GBv0j6ZC", "VVayP3EdZ6QH0QMttzpWgeJ2if4f2m8QjA10SaFQ");
+
+    var TestObject = Parse.Object.extend("TestObject");
+    var testObject = new TestObject();
+    testObject.save({foo: "bar"}).then(function(object) {
+      alert("yay! it worked");
+    });
+
+});
+</code></pre>
+
+  </div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-0" class="expander-trigger expander-hidden demo">Parse Example Data Fetch</a>
+  <div id="js-expander-content-0" class="expander-content">
+
+    <pre><code>var Data = Parse.Object.extend("Data");
+
+var DataSet = Parse.Collection.extend({
+    model: Data
+});
+
+var dataSet = new DataSet();
+
+dataSet.fetch({
+    success: function(dataSet) {
+        console.log(dataSet);
+    },
+    error: function(dataSet, error) {
+        console.log(error);
+    }
+});
+</code></pre>
+
+  </div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">JS Template</a>
+  <div id="js-expander-content-1" class="expander-content">
+
+    <pre><code>&lt;script id="dataSet-tpl" type="text/x-handlebars-template"&gt;
+    &lt;div class="data"&gt;
+        &lt;h2 class="name"&gt;&lt;a href="#"&gt;A name&lt;/a&gt;&lt;/h2&gt;
+        &lt;p class="meta"&gt;A time&lt;/p&gt;
+        &lt;div&gt;Some content&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/script&gt;
+</code></pre>
+
+  </div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Handlebars</a>
+  <div id="js-expander-content-2" class="expander-content">
+
+    <pre><code>// handlebars uses { {  } } to reference object variables
+
+{ {name} } // to get the name
+
+{ {#each data} }
+  // this allows you to iterate through class rows
+{ {/each} }
+
+{ { { } } } // use a triple-stash for referencing data with html tags that need to be rendered
+</code></pre>
+
+  </div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-3" class="expander-trigger expander-hidden demo">DataSet View</a>
+  <div id="js-expander-content-3" class="expander-content">
+
+    <pre><code>var DataSetView =  Parse.View.extend({
+    template: Handlebars.compile($('#dataSet-tpl').html()),
+    render: function(){
+        var collection = { data: this.collection.toJSON() };
+        this.$el.html(this.template(collection));
+    }
+});
+
+success: function(dataSet) {
+    var dataSetView = new DataSetView({ collection: dataSet });
+    dataSetView.render();
+    $('.main-container').html(dataSetView.el);
+}
+</code></pre>
+
+  </div>
+</div>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-4" class="expander-trigger expander-hidden demo">Putting it all Together</a>
+  <div id="js-expander-content-4" class="expander-content">
+
+    <pre><code>$(function() {
+
+	Parse.$ = jQuery;
+
+	Parse.initialize("YOUR CODE HERE", "YOUR CODE HERE");
+
+
+  var Data = Parse.Object.extend("Data"),
+    DataSet = Parse.Collection.extend({
+        model: Data
+    }),
+
+    var DataSetView =  Parse.View.extend({
+        template: Handlebars.compile($('#dataSet-tpl').html()),
+        render: function(){
+            var collection = { data: this.collection.toJSON() };
+            this.$el.html(this.template(collection));
+        }
+    });
+
+    dataSet = new DataSet();
+
+    dataSet.fetch({
+        success: function(dataSet) {
+            var blogsView = new BlogsView({ collection: blogs });
+            blogsView.render();
+            $('.main-container').html(blogsView.el);
+        },
+        error: function(dataSet, error) {
+            console.log(error);
+        }
+    });
+
+});
+</code></pre>
+
+  </div>
+</div>
 
   </article>
 

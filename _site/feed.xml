@@ -10,9 +10,186 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Feb 2015 18:09:01 -0600</pubDate>
-    <lastBuildDate>Thu, 26 Feb 2015 18:09:01 -0600</lastBuildDate>
+    <pubDate>Tue, 03 Mar 2015 18:11:25 -0600</pubDate>
+    <lastBuildDate>Tue, 03 Mar 2015 18:11:25 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Seven</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/data.gif&quot; alt=&quot;Data&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;what we’ll cover:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.parse.com/products/javascript&quot;&gt;Parse Javascript SDK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://parse.com/tutorials/anypic&quot;&gt;Example Parse App&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.parse.com/tutorials/todo-app-with-javascript&quot;&gt;Parse Backbone Tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://handlebarsjs.com/&quot;&gt;handlebars js library&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;for Thursday:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Think about how Parse fits in your app (if at all)&lt;/li&gt;
+  &lt;li&gt;Sketch out your app’s architecture&lt;/li&gt;
+  &lt;li&gt;Don’t forget about our make-up class this Sunday @ 10AM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;expander&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-5&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Parse Test Object&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-5&quot; class=&quot;expander-content&quot;&gt;
+
+    &lt;pre&gt;&lt;code&gt;$(function() {
+
+    Parse.$ = jQuery;
+
+    // Replace this line with the one on your Quickstart Guide Page
+    Parse.initialize(&quot;W8vTW6MTre3g0ScTeyPzqc6Uzj2KZoQ6GBv0j6ZC&quot;, &quot;VVayP3EdZ6QH0QMttzpWgeJ2if4f2m8QjA10SaFQ&quot;);
+
+    var TestObject = Parse.Object.extend(&quot;TestObject&quot;);
+    var testObject = new TestObject();
+    testObject.save({foo: &quot;bar&quot;}).then(function(object) {
+      alert(&quot;yay! it worked&quot;);
+    });
+
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;expander&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-0&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Parse Example Data Fetch&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-0&quot; class=&quot;expander-content&quot;&gt;
+
+    &lt;pre&gt;&lt;code&gt;var Data = Parse.Object.extend(&quot;Data&quot;);
+
+var DataSet = Parse.Collection.extend({
+    model: Data
+});
+
+var dataSet = new DataSet();
+
+dataSet.fetch({
+    success: function(dataSet) {
+        console.log(dataSet);
+    },
+    error: function(dataSet, error) {
+        console.log(error);
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;expander&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-1&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;JS Template&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-1&quot; class=&quot;expander-content&quot;&gt;
+
+    &lt;pre&gt;&lt;code&gt;&amp;lt;script id=&quot;dataSet-tpl&quot; type=&quot;text/x-handlebars-template&quot;&amp;gt;
+    &amp;lt;div class=&quot;data&quot;&amp;gt;
+        &amp;lt;h2 class=&quot;name&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;A name&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt;
+        &amp;lt;p class=&quot;meta&quot;&amp;gt;A time&amp;lt;/p&amp;gt;
+        &amp;lt;div&amp;gt;Some content&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;expander&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-2&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Handlebars&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-2&quot; class=&quot;expander-content&quot;&gt;
+
+    &lt;pre&gt;&lt;code&gt;// handlebars uses { {  } } to reference object variables
+
+{ {name} } // to get the name
+
+{ {#each data} }
+  // this allows you to iterate through class rows
+{ {/each} }
+
+{ { { } } } // use a triple-stash for referencing data with html tags that need to be rendered
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;expander&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-3&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;DataSet View&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-3&quot; class=&quot;expander-content&quot;&gt;
+
+    &lt;pre&gt;&lt;code&gt;var DataSetView =  Parse.View.extend({
+    template: Handlebars.compile($(&#39;#dataSet-tpl&#39;).html()),
+    render: function(){
+        var collection = { data: this.collection.toJSON() };
+        this.$el.html(this.template(collection));
+    }
+});
+
+success: function(dataSet) {
+    var dataSetView = new DataSetView({ collection: dataSet });
+    dataSetView.render();
+    $(&#39;.main-container&#39;).html(dataSetView.el);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;expander&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-4&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Putting it all Together&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-4&quot; class=&quot;expander-content&quot;&gt;
+
+    &lt;pre&gt;&lt;code&gt;$(function() {
+
+	Parse.$ = jQuery;
+
+	Parse.initialize(&quot;YOUR CODE HERE&quot;, &quot;YOUR CODE HERE&quot;);
+
+
+  var Data = Parse.Object.extend(&quot;Data&quot;),
+    DataSet = Parse.Collection.extend({
+        model: Data
+    }),
+
+    var DataSetView =  Parse.View.extend({
+        template: Handlebars.compile($(&#39;#dataSet-tpl&#39;).html()),
+        render: function(){
+            var collection = { data: this.collection.toJSON() };
+            this.$el.html(this.template(collection));
+        }
+    });
+
+    dataSet = new DataSet();
+
+    dataSet.fetch({
+        success: function(dataSet) {
+            var blogsView = new BlogsView({ collection: blogs });
+            blogsView.render();
+            $(&#39;.main-container&#39;).html(blogsView.el);
+        },
+        error: function(dataSet, error) {
+            console.log(error);
+        }
+    });
+
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 03 Mar 2015 01:00:00 -0600</pubDate>
+        <link>http://ubicomp.io/week/2015/03/03/seven.html</link>
+        <guid isPermaLink="true">http://ubicomp.io/week/2015/03/03/seven.html</guid>
+        
+        
+        <category>week</category>
+        
+      </item>
     
       <item>
         <title>Six</title>
