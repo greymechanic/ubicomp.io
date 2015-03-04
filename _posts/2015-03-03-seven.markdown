@@ -17,6 +17,7 @@ published: true
 - [Parse Backbone Tutorial](https://www.parse.com/tutorials/todo-app-with-javascript)
 - [handlebars js library](http://handlebarsjs.com/)
 
+#### [PhoneGap Parse Data Class Demo](https://github.com/notandrewkaye/Data)
 
 *for Thursday:*
 
