@@ -10,9 +10,85 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 03 Mar 2015 21:01:20 -0600</pubDate>
-    <lastBuildDate>Tue, 03 Mar 2015 21:01:20 -0600</lastBuildDate>
+    <pubDate>Tue, 10 Mar 2015 17:51:31 -0500</pubDate>
+    <lastBuildDate>Tue, 10 Mar 2015 17:51:31 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Eight</title>
+        <description>&lt;p&gt;Prepare for crits on Thursday.&lt;/p&gt;
+
+&lt;p&gt;We’ll look at registering our apps for iOS and how to change the app icon.&lt;/p&gt;
+
+&lt;div class=&quot;expander&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-5&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Changing App Icons&lt;/a&gt;
+  &lt;div id=&quot;js-expander-content-5&quot; class=&quot;expander-content&quot;&gt;
+
+    &lt;p&gt;Define icons via the `config.xml` file. (found in the root of your app directory)&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  // this is a global definition
+  &amp;lt;icon src=&quot;assets/icon.png&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;Alternatively you can define platform-specific icons and varying icon pixel densities&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;&amp;lt;platform name=&quot;amazon-fireos&quot;&amp;gt;
+      &amp;lt;icon src=&quot;res/android/ldpi.png&quot; density=&quot;ldpi&quot; /&amp;gt;
+      &amp;lt;icon src=&quot;res/android/mdpi.png&quot; density=&quot;mdpi&quot; /&amp;gt;
+      &amp;lt;icon src=&quot;res/android/hdpi.png&quot; density=&quot;hdpi&quot; /&amp;gt;
+      &amp;lt;icon src=&quot;res/android/xhdpi.png&quot; density=&quot;xhdpi&quot; /&amp;gt;
+ &amp;lt;/platform&amp;gt;  
+ &amp;lt;platform name=&quot;android&quot;&amp;gt;
+          &amp;lt;icon src=&quot;res/android/ldpi.png&quot; density=&quot;ldpi&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/android/mdpi.png&quot; density=&quot;mdpi&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/android/hdpi.png&quot; density=&quot;hdpi&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/android/xhdpi.png&quot; density=&quot;xhdpi&quot; /&amp;gt;
+ &amp;lt;/platform&amp;gt;
+ &amp;lt;platform name=&quot;blackberry10&quot;&amp;gt;
+          &amp;lt;icon src=&quot;res/bb10/icon-86.png&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/bb10/icon-150.png&quot; /&amp;gt;
+ &amp;lt;/platform&amp;gt;
+ &amp;lt;platform name=&quot;ios&quot;&amp;gt;
+          &amp;lt;!-- iOS 8.0+ --&amp;gt;
+          &amp;lt;!-- iPhone 6 Plus  --&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-60@3x.png&quot; width=&quot;180&quot; height=&quot;180&quot; /&amp;gt;
+          &amp;lt;!-- iOS 7.0+ --&amp;gt;
+          &amp;lt;!-- iPhone / iPod Touch  --&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-60.png&quot; width=&quot;60&quot; height=&quot;60&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-60@2x.png&quot; width=&quot;120&quot; height=&quot;120&quot; /&amp;gt;
+          &amp;lt;!-- iPad --&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-76.png&quot; width=&quot;76&quot; height=&quot;76&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-76@2x.png&quot; width=&quot;152&quot; height=&quot;152&quot; /&amp;gt;
+          &amp;lt;!-- iOS 6.1 --&amp;gt;
+          &amp;lt;!-- Spotlight Icon --&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-40.png&quot; width=&quot;40&quot; height=&quot;40&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-40@2x.png&quot; width=&quot;80&quot; height=&quot;80&quot; /&amp;gt;
+          &amp;lt;!-- iPhone / iPod Touch --&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon.png&quot; width=&quot;57&quot; height=&quot;57&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon@2x.png&quot; width=&quot;114&quot; height=&quot;114&quot; /&amp;gt;
+          &amp;lt;!-- iPad --&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-72.png&quot; width=&quot;72&quot; height=&quot;72&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-72@2x.png&quot; width=&quot;144&quot; height=&quot;144&quot; /&amp;gt;
+          &amp;lt;!-- iPhone Spotlight and Settings Icon --&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-small.png&quot; width=&quot;29&quot; height=&quot;29&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-small@2x.png&quot; width=&quot;58&quot; height=&quot;58&quot; /&amp;gt;
+          &amp;lt;!-- iPad Spotlight and Settings Icon --&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-50.png&quot; width=&quot;50&quot; height=&quot;50&quot; /&amp;gt;
+          &amp;lt;icon src=&quot;res/ios/icon-50@2x.png&quot; width=&quot;100&quot; height=&quot;100&quot; /&amp;gt;
+ &amp;lt;/platform&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 10 Mar 2015 02:00:00 -0500</pubDate>
+        <link>http://ubicomp.io/week/2015/03/10/eight.html</link>
+        <guid isPermaLink="true">http://ubicomp.io/week/2015/03/10/eight.html</guid>
+        
+        
+        <category>week</category>
+        
+      </item>
     
       <item>
         <title>Seven</title>
