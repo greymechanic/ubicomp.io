@@ -11,7 +11,13 @@ Prepare for crits on Thursday.
 
 We'll look at registering our apps for iOS and how to change the app icon.
 
+### Thursday
 
+Review Alpha Apps
+
+- [Handlebars.js Introduction](http://code.tutsplus.com/tutorials/introduction-to-handlebars--net-27761)
+- [Comprehensive Handlebars.js Tutorial](http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/)
+- [Example Parse App with Users and Data](https://www.parse.com/tutorials/todo-app-with-javascript)
 
 <div class="expander">
   <a href="javascript:void(0)" id="js-expander-trigger-5" class="expander-trigger expander-hidden demo">Changing App Icons</a>

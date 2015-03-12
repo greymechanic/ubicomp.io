@@ -10,8 +10,8 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Mar 2015 17:51:31 -0500</pubDate>
-    <lastBuildDate>Tue, 10 Mar 2015 17:51:31 -0500</lastBuildDate>
+    <pubDate>Thu, 12 Mar 2015 16:03:05 -0500</pubDate>
+    <lastBuildDate>Thu, 12 Mar 2015 16:03:05 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -19,6 +19,16 @@
         <description>&lt;p&gt;Prepare for crits on Thursday.&lt;/p&gt;
 
 &lt;p&gt;We’ll look at registering our apps for iOS and how to change the app icon.&lt;/p&gt;
+
+&lt;h3 id=&quot;thursday&quot;&gt;Thursday&lt;/h3&gt;
+
+&lt;p&gt;Review Alpha Apps&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://code.tutsplus.com/tutorials/introduction-to-handlebars--net-27761&quot;&gt;Handlebars.js Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/&quot;&gt;Comprehensive Handlebars.js Tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.parse.com/tutorials/todo-app-with-javascript&quot;&gt;Example Parse App with Users and Data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;expander&quot;&gt;
   &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-5&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Changing App Icons&lt;/a&gt;
