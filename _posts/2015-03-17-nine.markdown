@@ -1,8 +1,113 @@
 ---
 layout: post
 title:  "Nine"
+subtitle: "User"
 date:   2015-03-17 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week 9
+
+*what we'll cover:*
+
+- Parse User Implementation
+
+*over spring break:*
+
+- work on apps!
+- [how to access specific objects in a collection](http://lostechies.com/derickbailey/2011/10/11/backbone-js-getting-the-model-for-a-clicked-element/)
+- [parse resource](http://hasin.me/2013/10/23/playing-with-parse-com-api/)
+
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Working with Users</a>
+  <div id="js-expander-content-1" class="expander-content" markdown="1">
+
+
+    $(function() {
+
+    	Parse.$ = jQuery;
+
+    	Parse.initialize("XXXXXXXXXX", "XXXXXXXXX");
+
+          var LoginView = Parse.View.extend({
+      			template: Handlebars.compile($('#login-tpl').html()),
+      			events: {
+              // when you submit the login form run the login function
+      				'submit .form-signin': 'login'
+      			},
+      			login: function(e) {
+      				// Prevent Default Submit Event
+      				e.preventDefault();
+
+      				// Get data from the form and put them into variables
+      				var data = $(e.target).serializeArray(),
+      					username = data[0].value,
+      					password = data[1].value;
+
+      				// Call Parse User Login function with username and password
+      				Parse.User.logIn(username, password, {
+      					// If the username and password matches show the account view
+      					success: function(user) {
+      						var accountView = new AccountView({ model: user });
+                  accountView.render();
+      						$('.main-container').html(accountView.el);
+      					},
+      					// If there is an error
+      					error: function(user, error) {
+      						console.log(error);
+      					}
+      				});
+      			},
+       			render: function(){
+      				this.$el.html(this.template());
+      			}
+      		}),
+          AccountView = Parse.View.extend({
+      			template: Handlebars.compile($('#account-tpl').html()),
+      			events: {
+      				'click .do-something': 'doit'
+      			},
+      			doit: function(){
+      				var someNewView = new SomeNewView();
+              someNewView.render();
+      				$('.main-container').html(someNewView.el);
+      			},
+      			render: function(){
+      				var attributes = this.model.toJSON();
+      				this.$el.html(this.template(attributes));
+      			}
+      		});
+
+        // Render login view on page
+    		var loginView = new LoginView();
+    		loginView.render();
+    		$('.main-container').html(loginView.el);
+    });
+
+</div>
+</div>
+
+
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">Handlebars Templates</a>
+  <div id="js-expander-content-2" class="expander-content" markdown="1">
+
+
+    <script id="login-tpl" type="text/x-handlebars-template">
+      <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+        <input type="password" name="password" class="form-control" placeholder="Password" required="">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+     </script>
+
+    <script id="account-tpl" type="text/x-handlebars-template">
+      <h2>Welcome, {{username}}!</h2>
+      <button class="do-something btn btn-lg btn-primary">Do something when you click here</button>
+    </script>
+
+
+</div>
+</div>
