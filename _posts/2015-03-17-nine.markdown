@@ -11,6 +11,7 @@ published: true
 
 - Parse User Implementation
 - [Parse User guide](https://parse.com/docs/js_guide#users)
+- [signin bootstrap site]({{ "/assets/signin.zip" | prepend: site.baseurl }})
 
 *over spring break:*
 
