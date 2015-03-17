@@ -17,7 +17,7 @@ published: true
 - [how to access specific objects in a collection](http://lostechies.com/derickbailey/2011/10/11/backbone-js-getting-the-model-for-a-clicked-element/)
 - [parse resource](http://hasin.me/2013/10/23/playing-with-parse-com-api/)
 
-####n the horizon: 4/2 - Beta Review
+####*on the horizon: 4/2 - Beta Review*
 
 <div class="expander">
   <a href="javascript:void(0)" id="js-expander-trigger-1" class="expander-trigger expander-hidden demo">Working with Users</a>

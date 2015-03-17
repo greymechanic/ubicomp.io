@@ -10,8 +10,8 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Mar 2015 09:33:27 -0500</pubDate>
-    <lastBuildDate>Tue, 17 Mar 2015 09:33:27 -0500</lastBuildDate>
+    <pubDate>Tue, 17 Mar 2015 09:34:36 -0500</pubDate>
+    <lastBuildDate>Tue, 17 Mar 2015 09:34:36 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -30,7 +30,7 @@
   &lt;li&gt;&lt;a href=&quot;http://hasin.me/2013/10/23/playing-with-parse-com-api/&quot;&gt;parse resource&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;n-the-horizon-42---beta-review&quot;&gt;n the horizon: 4/2 - Beta Review&lt;/h4&gt;
+&lt;h4 id=&quot;on-the-horizon-42---beta-review&quot;&gt;&lt;em&gt;on the horizon: 4/2 - Beta Review&lt;/em&gt;&lt;/h4&gt;
 
 &lt;div class=&quot;expander&quot;&gt;
   &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-1&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Working with Users&lt;/a&gt;
