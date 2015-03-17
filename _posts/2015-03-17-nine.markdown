@@ -10,6 +10,7 @@ published: true
 *what we'll cover:*
 
 - Parse User Implementation
+- [Parse User guide](https://parse.com/docs/js_guide#users)
 
 *over spring break:*
 
