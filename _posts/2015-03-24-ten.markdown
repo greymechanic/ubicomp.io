@@ -1,8 +1,18 @@
 ---
 layout: post
 title:  "Ten"
-date:   2015-03-24 07:00:00
+subtitle: "Push"
+date: 2015-03-24 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week 10
+
+*what we'll cover:*
+
+- One-on-one check-ins
+- Planning out the next 4 weeks
+
+*links:*
+
+- stuck on Parse? [Code Academy has a small course](http://www.codecademy.com/en/tracks/parse)
+- [Use Parse queries to retrieve user-specific objects](https://parse.com/docs/js_guide#queries)

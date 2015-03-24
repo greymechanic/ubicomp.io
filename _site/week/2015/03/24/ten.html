@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Five</title>
+  <title>Ten</title>
   <meta name="description" content="what we’ll cover:">
 
   <!-- css -->
@@ -16,7 +16,7 @@
   <!-- js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <link rel="canonical" href="http://ubicomp.io/week/2015/02/17/five.html">
+  <link rel="canonical" href="http://ubicomp.io/week/2015/03/24/ten.html">
   <link rel="alternate" type="application/rss+xml" title="Smartphone & Wireless Studio" href="http://ubicomp.io/feed.xml" />
 </head>
 
@@ -60,167 +60,25 @@
       <div class="wrapper">
         <div class="post">
 
-  <header class="post-header" id="Five">
-    <h1 class="post-title">Five</h1>
-    <p class="post-meta">Feb 17, 2015</p>
+  <header class="post-header" id="Ten">
+    <h1 class="post-title">Ten</h1>
+    <p class="post-meta">Mar 24, 2015</p>
   </header>
 
   <article class="post-content">
     <p><em>what we’ll cover:</em></p>
 
 <ul>
-  <li>Video discussion</li>
-  <li>Movement &amp; Location w/ PhoneGap</li>
-  <li>Continue Working on Apps</li>
+  <li>One-on-one check-ins</li>
+  <li>Planning out the next 4 weeks</li>
 </ul>
 
-<p><em>for Thursday:</em></p>
+<p><em>links:</em></p>
 
 <ul>
-  <li>Continue working on prototypes</li>
-  <li>Thursday, we’ll continue with PhoneGap</li>
+  <li>stuck on Parse? <a href="http://www.codecademy.com/en/tracks/parse">Code Academy has a small course</a></li>
+  <li><a href="https://parse.com/docs/js_guide#queries">Use Parse queries to retrieve user-specific objects</a></li>
 </ul>
-
-<p><em>looking ahead:</em></p>
-
-<ul>
-  <li>3/8 @ 10AM - Sunday Make-up class</li>
-  <li>3/12 Alpha Launch</li>
-  <li>4/2 Beta Launch</li>
-  <li>5/5 &amp; 5/7 Launch!</li>
-</ul>
-
-<p><em>videos!</em></p>
-
-<ul>
-  <li><a href="http://www.ted.com/talks/clay_shirky_how_the_internet_will_one_day_transform_government">Clay Shirkey - How the Internet Changes Things</a></li>
-  <li><a href="http://www.ted.com/talks/sherry_turkle_alone_together?language=en">Sherry Turkle - Alone Together?</a></li>
-  <li><a href="https://vimeo.com/71278954">Bret Victor - The Future of Programming</a></li>
-</ul>
-
-<p><a href="/assets/PDFs/phonegap_cookbook_ch1.pdf">PhoneGap Dev Cookbook Chapter 1</a></p>
-
-<p><a href="/assets/GeoTest.zip">Download Tuesday’s Demo</a></p>
-
-<h3 id="thursday">Thursday</h3>
-
-<ul>
-  <li><a href="https://github.com">Github</a></li>
-  <li><a href="https://mac.github.com">Github Mac Client</a> / <a href="https://windows.github.com">Windows Client</a></li>
-  <li><a href="https://creative.adobe.com/products/phonegap-build">PhoneGap Creative Cloud</a></li>
-  <li><a href="https://build.phonegap.com">PhoneGap Build</a></li>
-  <li><a href="https://github.com/ccoenraets/PageSlider">PageSlider Example</a></li>
-</ul>
-
-<p><em>for the weekend:</em></p>
-
-<ul>
-  <li>Study HTML CSS &amp; Javascript</li>
-  <li>Continue working on Apps</li>
-</ul>
-
-<div class="expander">
-  <a href="javascript:void(0)" id="js-expander-trigger-2" class="expander-trigger expander-hidden demo">PhoneGap Device Info</a>
-  <div id="js-expander-content-2" class="expander-content">
-
-    <pre><code>getInfo: function(){
-    document.getElementById("deviceName").innerHTML
-    = device.name;
-    document.getElementById("version").innerHTML
-    = device.phonegap;
-    document.getElementById("mobilePlatform").innerHTML
-    = device.platform;
-    document.getElementById("platformVersion").innerHTML
-    = device.version;
-    document.getElementById("uuid").innerHTML
-    = device.uuid;
-}
-
-&lt;/div&gt;
-</code></pre>
-  </div>
-
-
-<div class="expander">
-  <a href="javascript:void(0)" id="js-expander-trigger-B" class="expander-trigger expander-hidden demo">PhoneGap GeoLocation Code Snippet</a>
-  <div id="js-expander-content-B" class="expander-content">
-
-      <pre><code>bindEvents: function() {
-   document.addEventListener('deviceready', this.onDeviceReady, false);
-   navigator.geolocation.getCurrentPosition(this.onSuccess, this.onError);
-},
-// deviceready Event Handler
-//
-// The scope of 'this' is the event. In order to call the 'receivedEvent'
-// function, we must explicitly call 'app.receivedEvent(...);'
-onDeviceReady: function() {
-   var ready = document.getElementById('ready');
-   ready.innerHTML = 'ready..'
-   app.receivedEvent('deviceready');
-},
-
-onSuccess: function(position) {
-   var geo = document.getElementById('geo');
-   var getG = document.getElementById('getGeo');
-
-   geo.innerHTML = 'geo data:'
-   var geoElement = document.getElementById('geolocationData');
-
-   $(getG).on('click', function(e) {
-       e.preventDefault();
-
-       geoElement.innerHTML = 'Latitude: ' + position.coords.latitude + '&lt;br /&gt;' +
-           'Longitude: ' + position.coords.longitude + '&lt;br /&gt;' +
-           'Altitude: ' + position.coords.altitude + '&lt;br /&gt;' +
-           'Accuracy: ' + position.coords.accuracy + '&lt;br /&gt;' +
-           'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '&lt;br /&gt;' +
-           'Heading: ' + position.coords.heading + '&lt;br /&gt;' +
-           'Speed: ' + position.coords.speed + '&lt;br /&gt;' +
-           'Timestamp: ' + position.timestamp + '&lt;br /&gt;';
-  });
-},
-// Run if we face an error
-// obtaining the position data
-onError: function(error) {
-   var errString = '';
-   // Check to see if we have received an error code
-   if(error.code) {
-       // If we have, handle it by case
-       switch(error.code) {
-           case 1: // PERMISSION_DENIED
-           errString =
-           'Unable to obtain the location information ' +
-           'because the device does not have permission '+
-           'to the use that service.';
-           break;
-           case 2: // POSITION_UNAVAILABLE
-           errString =
-           'Unable to obtain the location information ' +
-           'because the device location could not ' +
-           'be determined.';
-           break;
-           case 3: // TIMEOUT
-           errString =
-           'Unable to obtain the location within the ' +
-           'specified time allocation.';
-           break;
-           default: // UNKOWN_ERROR
-           errString =
-           'Unable to obtain the location of the ' +
-           'device due to an unknown error.';
-           break;
-       }
-   }
-   // Handle any errors we may face
-   var element = document.getElementById('geolocationData');
-   element.innerHTML = errString;
-   var geo = document.getElementById('geo');
-   geo.innerHTML = 'no geo'
-},
-</code></pre>
-    </div>
-</div>
-</div>
 
   </article>
 
