@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Eight</title>
-  <meta name="description" content="Prepare for crits on Thursday.">
+  <title>Eleven</title>
+  <meta name="description" content="what we’ll cover:">
 
   <!-- css -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
   <!-- js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <link rel="canonical" href="http://ubicomp.io/week/2015/03/10/eight.html">
+  <link rel="canonical" href="http://ubicomp.io/week/2015/03/31/eleven.html">
   <link rel="alternate" type="application/rss+xml" title="Smartphone & Wireless Studio" href="http://ubicomp.io/feed.xml" />
 </head>
 
@@ -60,82 +60,76 @@
       <div class="wrapper">
         <div class="post">
 
-  <header class="post-header" id="Eight">
-    <h1 class="post-title">Eight</h1>
-    <p class="post-meta">Mar 10, 2015</p>
+  <header class="post-header" id="Eleven">
+    <h1 class="post-title">Eleven</h1>
+    <p class="post-meta">Mar 31, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>Prepare for crits on Thursday.</p>
-
-<p>We’ll look at registering our apps for iOS and how to change the app icon.</p>
-
-<h3 id="thursday">Thursday</h3>
-
-<p>Review Alpha Apps</p>
+    <p><em>what we’ll cover:</em></p>
 
 <ul>
-  <li><a href="http://code.tutsplus.com/tutorials/introduction-to-handlebars--net-27761">Handlebars.js Introduction</a></li>
-  <li><a href="http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/">Comprehensive Handlebars.js Tutorial</a></li>
-  <li><a href="https://www.parse.com/tutorials/todo-app-with-javascript">Example Parse App with Users and Data</a></li>
+  <li>Getting started with openFrameworks</li>
+  <li>Continuing to work on final projects</li>
+</ul>
+
+<p><em>links:</em></p>
+
+<ul>
+  <li><a href="http://openframeworks.cc">openFrameworks</a></li>
+  <li><a href="https://github.com/olab-io/ofSketch">ofSketch</a></li>
+  <li><a href="http://itunes.apple.com/us/app/xcode/id497799835?ls=1&amp;mt=12">xCode</a></li>
+  <li><a href="https://github.com/openframeworks/ofBook">ofBook</a></li>
+  <li><a href="http://forum.openframeworks.cc">OF Forum</a></li>
+  <li><a href="http://talk.olab.io">oLab Forum</a></li>
 </ul>
 
 <div class="expander">
-  <a href="javascript:void(0)" id="js-expander-trigger-5" class="expander-trigger expander-hidden demo">Changing App Icons</a>
+  <a href="javascript:void(0)" id="js-expander-trigger-5" class="expander-trigger expander-hidden demo">intro openFrameworks functions &amp; methods</a>
   <div id="js-expander-content-5" class="expander-content">
 
-    <p>Define icons via the `config.xml` file. (found in the root of your app directory)</p>
-
-    <pre><code>  // this is a global definition
-  &lt;icon src="assets/icon.png" /&gt;
-</code></pre>
-
-    <p>Alternatively you can define platform-specific icons and varying icon pixel densities</p>
-
-    <pre><code>&lt;platform name="amazon-fireos"&gt;
-      &lt;icon src="res/android/ldpi.png" density="ldpi" /&gt;
-      &lt;icon src="res/android/mdpi.png" density="mdpi" /&gt;
-      &lt;icon src="res/android/hdpi.png" density="hdpi" /&gt;
-      &lt;icon src="res/android/xhdpi.png" density="xhdpi" /&gt;
- &lt;/platform&gt;  
- &lt;platform name="android"&gt;
-          &lt;icon src="res/android/ldpi.png" density="ldpi" /&gt;
-          &lt;icon src="res/android/mdpi.png" density="mdpi" /&gt;
-          &lt;icon src="res/android/hdpi.png" density="hdpi" /&gt;
-          &lt;icon src="res/android/xhdpi.png" density="xhdpi" /&gt;
- &lt;/platform&gt;
- &lt;platform name="blackberry10"&gt;
-          &lt;icon src="res/bb10/icon-86.png" /&gt;
-          &lt;icon src="res/bb10/icon-150.png" /&gt;
- &lt;/platform&gt;
- &lt;platform name="ios"&gt;
-          &lt;!-- iOS 8.0+ --&gt;
-          &lt;!-- iPhone 6 Plus  --&gt;
-          &lt;icon src="res/ios/icon-60@3x.png" width="180" height="180" /&gt;
-          &lt;!-- iOS 7.0+ --&gt;
-          &lt;!-- iPhone / iPod Touch  --&gt;
-          &lt;icon src="res/ios/icon-60.png" width="60" height="60" /&gt;
-          &lt;icon src="res/ios/icon-60@2x.png" width="120" height="120" /&gt;
-          &lt;!-- iPad --&gt;
-          &lt;icon src="res/ios/icon-76.png" width="76" height="76" /&gt;
-          &lt;icon src="res/ios/icon-76@2x.png" width="152" height="152" /&gt;
-          &lt;!-- iOS 6.1 --&gt;
-          &lt;!-- Spotlight Icon --&gt;
-          &lt;icon src="res/ios/icon-40.png" width="40" height="40" /&gt;
-          &lt;icon src="res/ios/icon-40@2x.png" width="80" height="80" /&gt;
-          &lt;!-- iPhone / iPod Touch --&gt;
-          &lt;icon src="res/ios/icon.png" width="57" height="57" /&gt;
-          &lt;icon src="res/ios/icon@2x.png" width="114" height="114" /&gt;
-          &lt;!-- iPad --&gt;
-          &lt;icon src="res/ios/icon-72.png" width="72" height="72" /&gt;
-          &lt;icon src="res/ios/icon-72@2x.png" width="144" height="144" /&gt;
-          &lt;!-- iPhone Spotlight and Settings Icon --&gt;
-          &lt;icon src="res/ios/icon-small.png" width="29" height="29" /&gt;
-          &lt;icon src="res/ios/icon-small@2x.png" width="58" height="58" /&gt;
-          &lt;!-- iPad Spotlight and Settings Icon --&gt;
-          &lt;icon src="res/ios/icon-50.png" width="50" height="50" /&gt;
-          &lt;icon src="res/ios/icon-50@2x.png" width="100" height="100" /&gt;
- &lt;/platform&gt;
+    <pre><code>ofSetWindowShape(width, height);
+ofSetCircleResolution(size);
+ofBackground(r,g,b);
+ofSetWindowTitle("graphics example");
+ 
+ofSetFrameRate(framerate);
+ 
+ofEnableAlphaBlending();
+ofSetColor(r,g,b,a); 
+ 
+image.loadImage("image.png");
+ 
+// shapes
+ofFill(); // draw "filled shapes"
+ofStroke(r,g,b);
+ 
+ofCircle(x,y,radius);
+ofEllipse(x,y,width,height);
+ofRect(x1,y1,x2,y2);
+ofTriangle(x1,y1,x2,y2,x3,y3);
+ 
+ 
+ 
+//text
+ofDrawBitmapString("some text", x,y);
+ 
+ 
+ofRandom(min,max);
+ 
+ 
+void keyPressed(int key)
+{
+    if('a' == key) {
+    	// do something
+   	}
+   	else if(' ' == key)
+    {
+        ofToggleFullscreen();
+    }
+}
+ 
+ofLogNotice("mousePressed()") &lt;&lt; x;
 </code></pre>
 
   </div>

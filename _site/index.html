@@ -1003,6 +1003,90 @@ success: function(dataSet) {
         </article>
       </li>
     
+      <li id="Eleven">
+        
+          <h1 class="post-title">
+            <!-- <a class="post-link" href="/week/2015/03/31/eleven.html"> -->
+            
+              openFrameworks
+            
+            <!-- </a> -->
+            <span class="post-meta">Mar 31</span>
+          </h1>
+        
+        <article class="post-content">
+          <p><em>what we’ll cover:</em></p>
+
+<ul>
+  <li>Getting started with openFrameworks</li>
+  <li>Continuing to work on final projects</li>
+</ul>
+
+<p><em>links:</em></p>
+
+<ul>
+  <li><a href="http://openframeworks.cc">openFrameworks</a></li>
+  <li><a href="https://github.com/olab-io/ofSketch">ofSketch</a></li>
+  <li><a href="http://itunes.apple.com/us/app/xcode/id497799835?ls=1&amp;mt=12">xCode</a></li>
+  <li><a href="https://github.com/openframeworks/ofBook">ofBook</a></li>
+  <li><a href="http://forum.openframeworks.cc">OF Forum</a></li>
+  <li><a href="http://talk.olab.io">oLab Forum</a></li>
+</ul>
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-5" class="expander-trigger expander-hidden demo">intro openFrameworks functions &amp; methods</a>
+  <div id="js-expander-content-5" class="expander-content">
+
+    <pre><code>ofSetWindowShape(width, height);
+ofSetCircleResolution(size);
+ofBackground(r,g,b);
+ofSetWindowTitle("graphics example");
+ 
+ofSetFrameRate(framerate);
+ 
+ofEnableAlphaBlending();
+ofSetColor(r,g,b,a); 
+ 
+image.loadImage("image.png");
+ 
+// shapes
+ofFill(); // draw "filled shapes"
+ofStroke(r,g,b);
+ 
+ofCircle(x,y,radius);
+ofEllipse(x,y,width,height);
+ofRect(x1,y1,x2,y2);
+ofTriangle(x1,y1,x2,y2,x3,y3);
+ 
+ 
+ 
+//text
+ofDrawBitmapString("some text", x,y);
+ 
+ 
+ofRandom(min,max);
+ 
+ 
+void keyPressed(int key)
+{
+    if('a' == key) {
+    	// do something
+   	}
+   	else if(' ' == key)
+    {
+        ofToggleFullscreen();
+    }
+}
+ 
+ofLogNotice("mousePressed()") &lt;&lt; x;
+</code></pre>
+
+  </div>
+</div>
+
+        </article>
+      </li>
+    
   </ul>
 
 </div>
@@ -1134,6 +1218,12 @@ success: function(dataSet) {
       
         <li><a class="scroll-on-page-link" href="#Ten">
           Week Ten
+        </a></li>
+      
+    
+      
+        <li><a class="scroll-on-page-link" href="#Eleven">
+          Week Eleven
         </a></li>
       
     

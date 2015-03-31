@@ -1,8 +1,72 @@
 ---
 layout: post
 title:  "Eleven"
+subtitle: "openFrameworks"
 date:   2015-03-31 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week 11
+
+*what we'll cover:*
+
+- Getting started with openFrameworks
+- Continuing to work on final projects
+
+*links:*
+
+- [openFrameworks](http://openframeworks.cc)
+- [ofSketch](https://github.com/olab-io/ofSketch)
+- [xCode](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
+- [ofBook](https://github.com/openframeworks/ofBook)
+- [OF Forum](http://forum.openframeworks.cc)
+- [oLab Forum](http://talk.olab.io)
+
+
+<div class="expander">
+  <a href="javascript:void(0)" id="js-expander-trigger-5" class="expander-trigger expander-hidden demo">intro openFrameworks functions & methods</a>
+  <div id="js-expander-content-5" class="expander-content" markdown="1">
+
+	ofSetWindowShape(width, height);
+	ofSetCircleResolution(size);
+	ofBackground(r,g,b);
+	ofSetWindowTitle("graphics example");
+	 
+	ofSetFrameRate(framerate);
+	 
+	ofEnableAlphaBlending();
+	ofSetColor(r,g,b,a); 
+	 
+	image.loadImage("image.png");
+	 
+	// shapes
+	ofFill(); // draw "filled shapes"
+	ofStroke(r,g,b);
+	 
+	ofCircle(x,y,radius);
+	ofEllipse(x,y,width,height);
+	ofRect(x1,y1,x2,y2);
+	ofTriangle(x1,y1,x2,y2,x3,y3);
+	 
+	 
+	 
+	//text
+	ofDrawBitmapString("some text", x,y);
+	 
+	 
+	ofRandom(min,max);
+	 
+	 
+	void keyPressed(int key)
+	{
+	    if('a' == key) {
+	    	// do something
+	   	}
+	   	else if(' ' == key)
+	    {
+	        ofToggleFullscreen();
+	    }
+	}
+	 
+	ofLogNotice("mousePressed()") << x;
+
+</div>
