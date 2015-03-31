@@ -10,8 +10,8 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 Mar 2015 17:58:42 -0500</pubDate>
-    <lastBuildDate>Tue, 31 Mar 2015 17:58:42 -0500</lastBuildDate>
+    <pubDate>Tue, 31 Mar 2015 18:01:25 -0500</pubDate>
+    <lastBuildDate>Tue, 31 Mar 2015 18:01:25 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -28,6 +28,8 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://openframeworks.cc&quot;&gt;openFrameworks&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://openframeworks.cc/documentation/&quot;&gt;openFrameworks documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://openframeworks.cc/documentation/graphics/ofGraphics.html&quot;&gt;OF graphics docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ofxaddons.com&quot;&gt;addons&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/olab-io/ofSketch&quot;&gt;ofSketch&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://itunes.apple.com/us/app/xcode/id497799835?ls=1&amp;amp;mt=12&quot;&gt;xCode&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/openframeworks/ofBook&quot;&gt;ofBook&lt;/a&gt;&lt;/li&gt;

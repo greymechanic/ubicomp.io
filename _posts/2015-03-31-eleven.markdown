@@ -16,6 +16,8 @@ published: true
 
 - [openFrameworks](http://openframeworks.cc)
 - [openFrameworks documentation](http://openframeworks.cc/documentation/)
+- [OF graphics docs](http://openframeworks.cc/documentation/graphics/ofGraphics.html)
+- [addons](http://ofxaddons.com)
 - [ofSketch](https://github.com/olab-io/ofSketch)
 - [xCode](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
 - [ofBook](https://github.com/openframeworks/ofBook)
