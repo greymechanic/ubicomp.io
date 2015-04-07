@@ -21,6 +21,7 @@ published: true
 - [Java Download](http://java.com/en/)
 - [Android NDK Download](http://dl.google.com/android/ndk/android-ndk-r9b-darwin-x86_64.tar.bz2)
 - [ofBook](http://openframeworks.cc/ofBook/chapters/foreword.html)
+- [Building a proper android app](http://developer.android.com/training/basics/firstapp/index.html)
 
 *steps:*
 

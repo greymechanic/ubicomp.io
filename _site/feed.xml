@@ -10,8 +10,8 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Apr 2015 17:57:51 -0500</pubDate>
-    <lastBuildDate>Tue, 07 Apr 2015 17:57:51 -0500</lastBuildDate>
+    <pubDate>Tue, 07 Apr 2015 18:02:24 -0500</pubDate>
+    <lastBuildDate>Tue, 07 Apr 2015 18:02:24 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -33,6 +33,7 @@
   &lt;li&gt;&lt;a href=&quot;http://java.com/en/&quot;&gt;Java Download&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://dl.google.com/android/ndk/android-ndk-r9b-darwin-x86_64.tar.bz2&quot;&gt;Android NDK Download&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://openframeworks.cc/ofBook/chapters/foreword.html&quot;&gt;ofBook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://developer.android.com/training/basics/firstapp/index.html&quot;&gt;Building a proper android app&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;em&gt;steps:&lt;/em&gt;&lt;/p&gt;
