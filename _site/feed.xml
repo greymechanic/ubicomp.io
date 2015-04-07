@@ -10,9 +10,72 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 Mar 2015 18:01:25 -0500</pubDate>
-    <lastBuildDate>Tue, 31 Mar 2015 18:01:25 -0500</lastBuildDate>
+    <pubDate>Tue, 07 Apr 2015 17:57:51 -0500</pubDate>
+    <lastBuildDate>Tue, 07 Apr 2015 17:57:51 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Twelve</title>
+        <description>&lt;p&gt;&lt;em&gt;what we’ll cover:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Getting the android development environment setup&lt;/li&gt;
+  &lt;li&gt;Continuing to work on final projects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;links:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.openframeworks.cc/versions/v0.8.4/of_v0.8.4_android_release.tar.gz&quot;&gt;openFrameworks for android download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://openframeworks.cc/setup/android-eclipse/&quot;&gt;OF android setup guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.multigesture.net/articles/how-to-setup-openframeworks-for-android-on-windows/&quot;&gt;OF windows/android tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://developer.android.com/sdk/index.html&quot;&gt;Android Studio Download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://java.com/en/&quot;&gt;Java Download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dl.google.com/android/ndk/android-ndk-r9b-darwin-x86_64.tar.bz2&quot;&gt;Android NDK Download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://openframeworks.cc/ofBook/chapters/foreword.html&quot;&gt;ofBook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;steps:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;NDK change on line 22 of &lt;code&gt;libs/openFrameworksCompiled/project/android/config.android.default.mk&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;GCC_VERSION = 4.8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit &lt;code&gt;openFrameworks/libs/openFrameworksCompiled/project/android/paths.make&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Open Android Studio and point the workspace to: &lt;code&gt;openFrameworks/examples/android&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Set the Java compiler compliance to 1.6 in &lt;code&gt;Preferences &amp;gt; Java &amp;gt; Compiler&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Import OF into Android Developer Tools with &lt;code&gt;File &amp;gt; Import &amp;gt;&amp;gt; General &amp;gt; Existing Projects in the Workspace&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;openFrameworks/libs&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;openFrameworks/libs/openFrameworks&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;openFrameworks/addons/ofxAndroid/ofAndroidLib&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;openFrameworks/examples/android&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Compile OpenFrameworks &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;choose the android target at: &lt;code&gt;Project &amp;gt; Build Configurations &amp;gt; Set Active&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;compile with &lt;code&gt;Project &amp;gt; Build Project&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Enable debugging on your device at: &lt;code&gt;Settings &amp;gt; Applications &amp;gt; Development &amp;gt; USB Debug&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Select your project and run with: &lt;code&gt;Run &amp;gt; Run As &amp;gt; Android Application&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Apr 2015 02:00:00 -0500</pubDate>
+        <link>http://ubicomp.io/week/2015/04/07/twelve.html</link>
+        <guid isPermaLink="true">http://ubicomp.io/week/2015/04/07/twelve.html</guid>
+        
+        
+        <category>week</category>
+        
+      </item>
     
       <item>
         <title>Eleven</title>
@@ -935,40 +998,6 @@ onError: function(error) {
         
         
         <category>week</category>
-        
-      </item>
-    
-      <item>
-        <title>One</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;The first day of class is always like a first date.. it’ll be a little awkward at first, you’ll wonder what our future will be like together, you’ll leave and forget alot of what we talked about, but if it clicks you’ll be excited for the next class.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;for planners, here’s what we’ll cover:&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Intros&lt;/li&gt;
-  &lt;li&gt;Course Overview&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://github.com&quot;&gt;github&lt;/a&gt; workshop&lt;/li&gt;
-  &lt;li&gt;The Internet&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;for the weekend:&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;put up a basic site on &lt;a href=&quot;http://github.com&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;if you need a refresh on HTML &amp;amp; CSS &lt;a href=&quot;http://lynda.com&quot;&gt;Lynda&lt;/a&gt; can help&lt;/li&gt;
-  &lt;li&gt;read &lt;a href=&quot;/assets/PDFs/www.pdf&quot;&gt;Wear Ware Where?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 22 Jan 2015 10:00:00 -0600</pubDate>
-        <link>http://ubicomp.io/week/class/2015/01/22/one.html</link>
-        <guid isPermaLink="true">http://ubicomp.io/week/class/2015/01/22/one.html</guid>
-        
-        
-        <category>week</category>
-        
-        <category>class</category>
         
       </item>
     

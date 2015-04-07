@@ -1,8 +1,51 @@
 ---
 layout: post
 title:  "Twelve"
+subtitle: "android"
 date:   2015-04-07 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week 12
+
+*what we'll cover:*
+
+- Getting the android development environment setup
+- Continuing to work on final projects
+
+*links:*
+
+- [openFrameworks for android download](http://www.openframeworks.cc/versions/v0.8.4/of_v0.8.4_android_release.tar.gz)
+- [OF android setup guide](http://openframeworks.cc/setup/android-eclipse/)
+- [OF windows/android tutorial](http://www.multigesture.net/articles/how-to-setup-openframeworks-for-android-on-windows/)
+- [Android Studio Download](http://developer.android.com/sdk/index.html)
+- [Java Download](http://java.com/en/)
+- [Android NDK Download](http://dl.google.com/android/ndk/android-ndk-r9b-darwin-x86_64.tar.bz2)
+- [ofBook](http://openframeworks.cc/ofBook/chapters/foreword.html)
+
+*steps:*
+
+NDK change on line 22 of `libs/openFrameworksCompiled/project/android/config.android.default.mk`
+
+	GCC_VERSION = 4.8
+
+Edit `openFrameworks/libs/openFrameworksCompiled/project/android/paths.make`
+
+Open Android Studio and point the workspace to: `openFrameworks/examples/android`
+
+Set the Java compiler compliance to 1.6 in `Preferences > Java > Compiler`
+
+Import OF into Android Developer Tools with `File > Import >> General > Existing Projects in the Workspace`:
+
+- `openFrameworks/libs`
+- `openFrameworks/libs/openFrameworks`
+- `openFrameworks/addons/ofxAndroid/ofAndroidLib`
+- `openFrameworks/examples/android`
+
+Compile OpenFrameworks 
+
+1. choose the android target at: `Project > Build Configurations > Set Active`
+2. compile with `Project > Build Project`
+
+Enable debugging on your device at: `Settings > Applications > Development > USB Debug`
+
+Select your project and run with: `Run > Run As > Android Application`

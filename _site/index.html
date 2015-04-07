@@ -1090,6 +1090,73 @@ ofLogNotice("mousePressed()") &lt;&lt; x;
         </article>
       </li>
     
+      <li id="Twelve">
+        
+          <h1 class="post-title">
+            <!-- <a class="post-link" href="/week/2015/04/07/twelve.html"> -->
+            
+              android
+            
+            <!-- </a> -->
+            <span class="post-meta">Apr 7</span>
+          </h1>
+        
+        <article class="post-content">
+          <p><em>what we’ll cover:</em></p>
+
+<ul>
+  <li>Getting the android development environment setup</li>
+  <li>Continuing to work on final projects</li>
+</ul>
+
+<p><em>links:</em></p>
+
+<ul>
+  <li><a href="http://www.openframeworks.cc/versions/v0.8.4/of_v0.8.4_android_release.tar.gz">openFrameworks for android download</a></li>
+  <li><a href="http://openframeworks.cc/setup/android-eclipse/">OF android setup guide</a></li>
+  <li><a href="http://www.multigesture.net/articles/how-to-setup-openframeworks-for-android-on-windows/">OF windows/android tutorial</a></li>
+  <li><a href="http://developer.android.com/sdk/index.html">Android Studio Download</a></li>
+  <li><a href="http://java.com/en/">Java Download</a></li>
+  <li><a href="http://dl.google.com/android/ndk/android-ndk-r9b-darwin-x86_64.tar.bz2">Android NDK Download</a></li>
+  <li><a href="http://openframeworks.cc/ofBook/chapters/foreword.html">ofBook</a></li>
+</ul>
+
+<p><em>steps:</em></p>
+
+<p>NDK change on line 22 of <code>libs/openFrameworksCompiled/project/android/config.android.default.mk</code></p>
+
+<pre><code>GCC_VERSION = 4.8
+</code></pre>
+
+<p>Edit <code>openFrameworks/libs/openFrameworksCompiled/project/android/paths.make</code></p>
+
+<p>Open Android Studio and point the workspace to: <code>openFrameworks/examples/android</code></p>
+
+<p>Set the Java compiler compliance to 1.6 in <code>Preferences &gt; Java &gt; Compiler</code></p>
+
+<p>Import OF into Android Developer Tools with <code>File &gt; Import &gt;&gt; General &gt; Existing Projects in the Workspace</code>:</p>
+
+<ul>
+  <li><code>openFrameworks/libs</code></li>
+  <li><code>openFrameworks/libs/openFrameworks</code></li>
+  <li><code>openFrameworks/addons/ofxAndroid/ofAndroidLib</code></li>
+  <li><code>openFrameworks/examples/android</code></li>
+</ul>
+
+<p>Compile OpenFrameworks </p>
+
+<ol>
+  <li>choose the android target at: <code>Project &gt; Build Configurations &gt; Set Active</code></li>
+  <li>compile with <code>Project &gt; Build Project</code></li>
+</ol>
+
+<p>Enable debugging on your device at: <code>Settings &gt; Applications &gt; Development &gt; USB Debug</code></p>
+
+<p>Select your project and run with: <code>Run &gt; Run As &gt; Android Application</code></p>
+
+        </article>
+      </li>
+    
   </ul>
 
 </div>
@@ -1227,6 +1294,12 @@ ofLogNotice("mousePressed()") &lt;&lt; x;
       
         <li><a class="scroll-on-page-link" href="#Eleven">
           Week Eleven
+        </a></li>
+      
+    
+      
+        <li><a class="scroll-on-page-link" href="#Twelve">
+          Week Twelve
         </a></li>
       
     
