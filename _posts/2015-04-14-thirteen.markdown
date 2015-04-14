@@ -1,8 +1,93 @@
 ---
 layout: post
 title:  "Thirteen"
+subtitle: "APIs"
 date:   2015-04-14 07:00:00
 categories: week
-published: false
+published: true
 ---
-Week thirteen
+
+
+
+##JSON / Working with APIs
+
+We'll look at how to make a dead simple web app using a basic weather API
+
+What that means... We'll use a service like [World Weather Online](http://www.worldweatheronline.com) to retrieve the current weather data via JSON format. JSON is short for Javascript Object Notation -> a data-interchange language.... in other words, a way of packaging a set of data to be easily interpreted somewhere else. In our case we need an easy way of reading weather data so WWO provides us with JSON to get it. [What a weather JSON response looks like.](http://api.worldweatheronline.com/free/v2/weather.ashx?q=chicago&format=json&num_of_days=5&key=ab8224cbf147eb2fd7cf37ea69c49) Doesn't look so simple...but it is.
+
+How to use JSON on a basic level:
+
+	var data={ "firstName" : "Jill" };
+    console.log(data.firstName);
+
+    
+[JSON formatter](http://jsonformatter.curiousconcept.com)
+
+
+[register for an account at WWO to get your api key](https://developer.worldweatheronline.com/auth/register) & set up our response with our api key
+
+[Download this basic bootstrap site]({{ "/assets/bootstrap-3.3.2-Cover.zip" | prepend: site.baseurl }})
+
+
+	var my_city="chicago";
+    var my_key="XXXXXXXXXXXXXXXXXXXXXXXXXX";
+    var no_of_days=1;
+    // build URI:
+    var uri="http://api.worldweatheronline.com/free/v2/weather.ashx?q="+my_city+"&format=json&no_of_days="+no_of_days+"&key="+my_key+"&includeLocation=yes";
+    // uri-encode it to prevent encoding errors:
+    uri=encodeURI(uri); 
+
+
+Establish the parameters for gathering the data from the object
+
+	jQuery.get(uri,function(r){
+	if(r.data.error) {
+
+	    // if there's an error, show it
+	    alert(r.data.error[0].msg);
+
+	} else {
+      	// Name of nearest area :
+        var nearest_area    =r.data.nearest_area[0].region[0].value;
+        
+        // Name of country :
+        var country         =r.data.nearest_area[0].country[0].value;
+        
+        // Current temperature in fahrenheit and celsius:
+        var current_temp_F  =r.data.current_condition[0].temp_F;
+        var current_temp_C  =r.data.current_condition[0].temp_C;
+        
+        // A short description of current  weather conditions:
+        var current_condition=r.data.current_condition[0].weatherDesc[0].value;
+        
+        // Max/Min temperature in fahrenheit
+        var max_temp_F      =r.data.weather[0].tempMaxF;
+        var min_temp_F      =r.data.weather[0].tempMinF;
+        
+        // Max/min temperature in celsius:
+        var max_temp_C      =r.data.weather[0].tempMaxC;
+        var min_temp_C      =r.data.weather[0].tempMinC;
+        
+        //Humidity in %
+        var humidity        =r.data.current_condition[0].humidity;
+        
+        // Precipitation in mm :
+        var precipitation   =r.data.current_condition[0].precipMM;
+        
+        // Pressure in millibars:
+        var pressure        =r.data.current_condition[0].pressure;
+        
+        // Wind speed in kmph
+        var wind_speed_kmph =r.data.current_condition[0].windspeedKmph;
+        
+        // Wind speed in mph
+        var wind_speed_mph  =r.data.current_condition[0].windspeedMiles;
+        
+        // Wind direction degree (0 degree corresponds with North)
+        var wind_dir        =r.data.current_condition[0].winddirDegree;
+
+	}//end if
+	},"jsonp"); // end jQuery.get()
+
+
+

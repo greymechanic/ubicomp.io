@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Eleven</title>
-  <meta name="description" content="what we’ll cover:">
+  <title>Thirteen</title>
+  <meta name="description" content="JSON / Working with APIs">
 
   <!-- css -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
   <!-- js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <link rel="canonical" href="http://ubicomp.io/week/2015/03/31/eleven.html">
+  <link rel="canonical" href="http://ubicomp.io/week/2015/04/14/thirteen.html">
   <link rel="alternate" type="application/rss+xml" title="Smartphone & Wireless Studio" href="http://ubicomp.io/feed.xml" />
 </head>
 
@@ -60,83 +60,91 @@
       <div class="wrapper">
         <div class="post">
 
-  <header class="post-header" id="Eleven">
-    <h1 class="post-title">Eleven</h1>
-    <p class="post-meta">Mar 31, 2015</p>
+  <header class="post-header" id="Thirteen">
+    <h1 class="post-title">Thirteen</h1>
+    <p class="post-meta">Apr 14, 2015</p>
   </header>
 
   <article class="post-content">
-    <p><em>what we’ll cover:</em></p>
+    <h2 id="json--working-with-apis">JSON / Working with APIs</h2>
 
-<ul>
-  <li>Getting started with openFrameworks</li>
-  <li>Continuing to work on final projects</li>
-</ul>
+<p>We’ll look at how to make a dead simple web app using a basic weather API</p>
 
-<p><em>links:</em></p>
+<p>What that means… We’ll use a service like <a href="http://www.worldweatheronline.com">World Weather Online</a> to retrieve the current weather data via JSON format. JSON is short for Javascript Object Notation -&gt; a data-interchange language…. in other words, a way of packaging a set of data to be easily interpreted somewhere else. In our case we need an easy way of reading weather data so WWO provides us with JSON to get it. <a href="http://api.worldweatheronline.com/free/v2/weather.ashx?q=chicago&amp;format=json&amp;num_of_days=5&amp;key=ab8224cbf147eb2fd7cf37ea69c49">What a weather JSON response looks like.</a> Doesn’t look so simple…but it is.</p>
 
-<ul>
-  <li><a href="http://openframeworks.cc">openFrameworks</a></li>
-  <li><a href="http://openframeworks.cc/documentation/">openFrameworks documentation</a></li>
-  <li><a href="http://openframeworks.cc/documentation/graphics/ofGraphics.html">OF graphics docs</a></li>
-  <li><a href="http://ofxaddons.com">addons</a></li>
-  <li><a href="https://github.com/olab-io/ofSketch">ofSketch</a></li>
-  <li><a href="http://itunes.apple.com/us/app/xcode/id497799835?ls=1&amp;mt=12">xCode</a></li>
-  <li><a href="https://github.com/openframeworks/ofBook">ofBook</a></li>
-  <li><a href="http://forum.openframeworks.cc">OF Forum</a></li>
-  <li><a href="http://talk.olab.io">oLab Forum</a></li>
-</ul>
+<p>How to use JSON on a basic level:</p>
 
-<div class="expander">
-  <a href="javascript:void(0)" id="js-expander-trigger-5" class="expander-trigger expander-hidden demo">intro openFrameworks functions &amp; methods</a>
-  <div id="js-expander-content-5" class="expander-content">
-
-    <pre><code>ofSetWindowShape(width, height);
-ofSetCircleResolution(size);
-ofBackground(r,g,b);
-ofSetWindowTitle("graphics example");
- 
-ofSetFrameRate(framerate);
- 
-ofEnableAlphaBlending();
-ofSetColor(r,g,b,a); 
- 
-image.loadImage("image.png");
- 
-// shapes
-ofFill(); // draw "filled shapes"
-ofStroke(r,g,b);
- 
-ofCircle(x,y,radius);
-ofEllipse(x,y,width,height);
-ofRect(x1,y1,x2,y2);
-ofTriangle(x1,y1,x2,y2,x3,y3);
- 
- 
- 
-//text
-ofDrawBitmapString("some text", x,y);
- 
- 
-ofRandom(min,max);
- 
- 
-void keyPressed(int key)
-{
-    if('a' == key) {
-    	// do something
-   	}
-   	else if(' ' == key)
-    {
-        ofToggleFullscreen();
-    }
-}
- 
-ofLogNotice("mousePressed()") &lt;&lt; x;
+<pre><code>var data={ "firstName" : "Jill" };
+console.log(data.firstName);
 </code></pre>
 
-  </div>
-</div>
+<p><a href="http://jsonformatter.curiousconcept.com">JSON formatter</a></p>
+
+<p><a href="https://developer.worldweatheronline.com/auth/register">register for an account at WWO to get your api key</a> &amp; set up our response with our api key</p>
+
+<p><a href="/assets/bootstrap-3.3.2-Cover.zip">Download this basic bootstrap site</a></p>
+
+<pre><code>var my_city="chicago";
+var my_key="XXXXXXXXXXXXXXXXXXXXXXXXXX";
+var no_of_days=1;
+// build URI:
+var uri="http://api.worldweatheronline.com/free/v2/weather.ashx?q="+my_city+"&amp;format=json&amp;no_of_days="+no_of_days+"&amp;key="+my_key+"&amp;includeLocation=yes";
+// uri-encode it to prevent encoding errors:
+uri=encodeURI(uri); 
+</code></pre>
+
+<p>Establish the parameters for gathering the data from the object</p>
+
+<pre><code>jQuery.get(uri,function(r){
+if(r.data.error) {
+
+    // if there's an error, show it
+    alert(r.data.error[0].msg);
+
+} else {
+  	// Name of nearest area :
+    var nearest_area    =r.data.nearest_area[0].region[0].value;
+    
+    // Name of country :
+    var country         =r.data.nearest_area[0].country[0].value;
+    
+    // Current temperature in fahrenheit and celsius:
+    var current_temp_F  =r.data.current_condition[0].temp_F;
+    var current_temp_C  =r.data.current_condition[0].temp_C;
+    
+    // A short description of current  weather conditions:
+    var current_condition=r.data.current_condition[0].weatherDesc[0].value;
+    
+    // Max/Min temperature in fahrenheit
+    var max_temp_F      =r.data.weather[0].tempMaxF;
+    var min_temp_F      =r.data.weather[0].tempMinF;
+    
+    // Max/min temperature in celsius:
+    var max_temp_C      =r.data.weather[0].tempMaxC;
+    var min_temp_C      =r.data.weather[0].tempMinC;
+    
+    //Humidity in %
+    var humidity        =r.data.current_condition[0].humidity;
+    
+    // Precipitation in mm :
+    var precipitation   =r.data.current_condition[0].precipMM;
+    
+    // Pressure in millibars:
+    var pressure        =r.data.current_condition[0].pressure;
+    
+    // Wind speed in kmph
+    var wind_speed_kmph =r.data.current_condition[0].windspeedKmph;
+    
+    // Wind speed in mph
+    var wind_speed_mph  =r.data.current_condition[0].windspeedMiles;
+    
+    // Wind direction degree (0 degree corresponds with North)
+    var wind_dir        =r.data.current_condition[0].winddirDegree;
+
+}//end if
+},"jsonp"); // end jQuery.get()
+</code></pre>
+
 
   </article>
 

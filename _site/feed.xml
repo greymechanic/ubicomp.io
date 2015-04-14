@@ -10,9 +10,100 @@
 </description>
     <link>http://ubicomp.io/</link>
     <atom:link href="http://ubicomp.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Apr 2015 18:02:24 -0500</pubDate>
-    <lastBuildDate>Tue, 07 Apr 2015 18:02:24 -0500</lastBuildDate>
+    <pubDate>Tue, 14 Apr 2015 16:40:38 -0500</pubDate>
+    <lastBuildDate>Tue, 14 Apr 2015 16:40:38 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Thirteen</title>
+        <description>&lt;h2 id=&quot;json--working-with-apis&quot;&gt;JSON / Working with APIs&lt;/h2&gt;
+
+&lt;p&gt;We’ll look at how to make a dead simple web app using a basic weather API&lt;/p&gt;
+
+&lt;p&gt;What that means… We’ll use a service like &lt;a href=&quot;http://www.worldweatheronline.com&quot;&gt;World Weather Online&lt;/a&gt; to retrieve the current weather data via JSON format. JSON is short for Javascript Object Notation -&amp;gt; a data-interchange language…. in other words, a way of packaging a set of data to be easily interpreted somewhere else. In our case we need an easy way of reading weather data so WWO provides us with JSON to get it. &lt;a href=&quot;http://api.worldweatheronline.com/free/v2/weather.ashx?q=chicago&amp;amp;format=json&amp;amp;num_of_days=5&amp;amp;key=ab8224cbf147eb2fd7cf37ea69c49&quot;&gt;What a weather JSON response looks like.&lt;/a&gt; Doesn’t look so simple…but it is.&lt;/p&gt;
+
+&lt;p&gt;How to use JSON on a basic level:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var data={ &quot;firstName&quot; : &quot;Jill&quot; };
+console.log(data.firstName);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jsonformatter.curiousconcept.com&quot;&gt;JSON formatter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.worldweatheronline.com/auth/register&quot;&gt;register for an account at WWO to get your api key&lt;/a&gt; &amp;amp; set up our response with our api key&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/bootstrap-3.3.2-Cover.zip&quot;&gt;Download this basic bootstrap site&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var my_city=&quot;chicago&quot;;
+var my_key=&quot;XXXXXXXXXXXXXXXXXXXXXXXXXX&quot;;
+var no_of_days=1;
+// build URI:
+var uri=&quot;http://api.worldweatheronline.com/free/v2/weather.ashx?q=&quot;+my_city+&quot;&amp;amp;format=json&amp;amp;no_of_days=&quot;+no_of_days+&quot;&amp;amp;key=&quot;+my_key+&quot;&amp;amp;includeLocation=yes&quot;;
+// uri-encode it to prevent encoding errors:
+uri=encodeURI(uri); 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Establish the parameters for gathering the data from the object&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jQuery.get(uri,function(r){
+if(r.data.error) {
+
+    // if there&#39;s an error, show it
+    alert(r.data.error[0].msg);
+
+} else {
+  	// Name of nearest area :
+    var nearest_area    =r.data.nearest_area[0].region[0].value;
+    
+    // Name of country :
+    var country         =r.data.nearest_area[0].country[0].value;
+    
+    // Current temperature in fahrenheit and celsius:
+    var current_temp_F  =r.data.current_condition[0].temp_F;
+    var current_temp_C  =r.data.current_condition[0].temp_C;
+    
+    // A short description of current  weather conditions:
+    var current_condition=r.data.current_condition[0].weatherDesc[0].value;
+    
+    // Max/Min temperature in fahrenheit
+    var max_temp_F      =r.data.weather[0].tempMaxF;
+    var min_temp_F      =r.data.weather[0].tempMinF;
+    
+    // Max/min temperature in celsius:
+    var max_temp_C      =r.data.weather[0].tempMaxC;
+    var min_temp_C      =r.data.weather[0].tempMinC;
+    
+    //Humidity in %
+    var humidity        =r.data.current_condition[0].humidity;
+    
+    // Precipitation in mm :
+    var precipitation   =r.data.current_condition[0].precipMM;
+    
+    // Pressure in millibars:
+    var pressure        =r.data.current_condition[0].pressure;
+    
+    // Wind speed in kmph
+    var wind_speed_kmph =r.data.current_condition[0].windspeedKmph;
+    
+    // Wind speed in mph
+    var wind_speed_mph  =r.data.current_condition[0].windspeedMiles;
+    
+    // Wind direction degree (0 degree corresponds with North)
+    var wind_dir        =r.data.current_condition[0].winddirDegree;
+
+}//end if
+},&quot;jsonp&quot;); // end jQuery.get()
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Tue, 14 Apr 2015 02:00:00 -0500</pubDate>
+        <link>http://ubicomp.io/week/2015/04/14/thirteen.html</link>
+        <guid isPermaLink="true">http://ubicomp.io/week/2015/04/14/thirteen.html</guid>
+        
+        
+        <category>week</category>
+        
+      </item>
     
       <item>
         <title>Twelve</title>
@@ -946,56 +1037,6 @@ onError: function(error) {
         <pubDate>Tue, 10 Feb 2015 01:00:00 -0600</pubDate>
         <link>http://ubicomp.io/week/2015/02/10/four.html</link>
         <guid isPermaLink="true">http://ubicomp.io/week/2015/02/10/four.html</guid>
-        
-        
-        <category>week</category>
-        
-      </item>
-    
-      <item>
-        <title>Two</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;The Parse platform provides a complete backend solution for your mobile application. Our goal is to totally eliminate the need for writing server code or maintaining servers.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;what we’ll cover:&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Using &lt;a href=&quot;http://getbootstrap.com&quot;&gt;Bootstrap&lt;/a&gt; for a mobile site&lt;/p&gt;
-
-&lt;p&gt;Download &lt;a href=&quot;/assets/bootstrap-3.3.2-Cover.zip&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Getting started with &lt;a href=&quot;http://parse.com&quot;&gt;Parse&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;for next week&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;brainstorm ideas for web apps - think big and small&lt;/p&gt;
-
-&lt;p&gt;come with some sketches/ideas for project 1&lt;/p&gt;
-
-&lt;p&gt;Read &lt;a href=&quot;http://www.20thingsilearned.com/en-US/web-apps&quot;&gt;What are Web Apps?&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://alistapart.com/article/apps-vs-the-web&quot;&gt;Apps vs the Web&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;expander&quot;&gt;
-  &lt;a href=&quot;javascript:void(0)&quot; id=&quot;js-expander-trigger-2&quot; class=&quot;expander-trigger expander-hidden demo&quot;&gt;Terminal Commands&lt;/a&gt;
-  &lt;div id=&quot;js-expander-content-2&quot; class=&quot;expander-content&quot;&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code&gt;cd&lt;/code&gt; - change directory, use this to move to another folder&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;ls&lt;/code&gt; - list files, lists the files in the current directory&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;pwd&lt;/code&gt; - print working directory, shows your current location&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;git status&lt;/code&gt; - get the status of your repository&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;git add filename&lt;/code&gt; - adds the file(s) you want to commit&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;git commit -m &quot;this is your commit message&quot;&lt;/code&gt; - commits the files added with the message you append&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;git push&lt;/code&gt; - push your local commits to the repository online&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;git pull&lt;/code&gt; - pull remote changes onto your local machine&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;sudo&lt;/code&gt; - command to execute at an administrative leve[]()&lt;/li&gt;
-    &lt;/ul&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 27 Jan 2015 01:00:00 -0600</pubDate>
-        <link>http://ubicomp.io/week/2015/01/27/two.html</link>
-        <guid isPermaLink="true">http://ubicomp.io/week/2015/01/27/two.html</guid>
         
         
         <category>week</category>
